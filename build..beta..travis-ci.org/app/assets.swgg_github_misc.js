@@ -1,66 +1,8 @@
-/* istanbul instrument in package swgg_github_misc */
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
-(function () {
-    'use strict';
-    var local;
-
-
-
-    // run shared js-env code - init-before
-    (function () {
-        // init local
-        local = {};
-        // init modeJs
-        local.modeJs = (function () {
-            try {
-                return typeof navigator.userAgent === 'string' &&
-                    typeof document.querySelector('body') === 'object' &&
-                    typeof XMLHttpRequest.prototype.open === 'function' &&
-                    'browser';
-            } catch (errorCaughtBrowser) {
-                return module.exports &&
-                    typeof process.versions.node === 'string' &&
-                    typeof require('http').createServer === 'function' &&
-                    'node';
-            }
-        }());
-        // init global
-        local.global = local.modeJs === 'browser'
-            ? window
-            : global;
-        // init utility2_rollup
-        local = local.global.utility2_rollup || local;
-        /* istanbul ignore next */
-        if (local) {
-            local = local.global.utility2_rollup ||
-                local.global.utility2_rollup_old ||
-                require('./assets.utility2.rollup.js');
-            local.fs = null;
-        }
-        // init exports
-        if (local.modeJs === 'browser') {
-            local.global.utility2_swgg_github_misc = local;
-        } else {
-            // require builtins
-            Object.keys(process.binding('natives')).forEach(function (key) {
-                if (!local[key] && !(/\/|^_|^assert|^sys$/).test(key)) {
-                    local[key] = require(key);
-                }
-            });
-            module.exports = local;
-            module.exports.__dirname = __dirname;
-        }
-        // init lib
-        local.local = local.swgg_github_misc = local;
-    }());
-}());
+var __cov_5fb33c7367d96 = (Function('return this'))();
+if (!__cov_5fb33c7367d96.__coverage__) { __cov_5fb33c7367d96.__coverage__ = {}; }
+__cov_5fb33c7367d96 = __cov_5fb33c7367d96.__coverage__;
+if (!(__cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'])) {
+   __cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'] = {"path":"/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js","s":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0,"20":0,"21":0},"b":{"1":[0,0,0,0],"2":[0,0,0,0],"3":[0,0],"4":[0,0],"5":[0,0],"6":[0,0,0],"7":[0,0],"8":[0,0],"9":[0,0]},"f":{"1":0,"2":0,"3":0,"4":0},"fnMap":{"1":{"name":"(anonymous_1)","line":13,"loc":{"start":{"line":13,"column":1},"end":{"line":13,"column":13}}},"2":{"name":"(anonymous_2)","line":20,"loc":{"start":{"line":20,"column":5},"end":{"line":20,"column":17}}},"3":{"name":"(anonymous_3)","line":24,"loc":{"start":{"line":24,"column":24},"end":{"line":24,"column":36}}},"4":{"name":"(anonymous_4)","line":55,"loc":{"start":{"line":55,"column":60},"end":{"line":55,"column":75}}}},"statementMap":{"1":{"start":{"line":13,"column":0},"end":{"line":66,"column":5}},"2":{"start":{"line":15,"column":4},"end":{"line":15,"column":14}},"3":{"start":{"line":20,"column":4},"end":{"line":65,"column":9}},"4":{"start":{"line":22,"column":8},"end":{"line":22,"column":19}},"5":{"start":{"line":24,"column":8},"end":{"line":36,"column":13}},"6":{"start":{"line":25,"column":12},"end":{"line":35,"column":13}},"7":{"start":{"line":26,"column":16},"end":{"line":29,"column":30}},"8":{"start":{"line":31,"column":16},"end":{"line":34,"column":27}},"9":{"start":{"line":38,"column":8},"end":{"line":40,"column":21}},"10":{"start":{"line":42,"column":8},"end":{"line":42,"column":54}},"11":{"start":{"line":44,"column":8},"end":{"line":49,"column":9},"skip":true},"12":{"start":{"line":45,"column":12},"end":{"line":47,"column":55},"skip":true},"13":{"start":{"line":48,"column":12},"end":{"line":48,"column":28},"skip":true},"14":{"start":{"line":51,"column":8},"end":{"line":62,"column":9}},"15":{"start":{"line":52,"column":12},"end":{"line":52,"column":59}},"16":{"start":{"line":55,"column":12},"end":{"line":59,"column":15}},"17":{"start":{"line":56,"column":16},"end":{"line":58,"column":17}},"18":{"start":{"line":57,"column":20},"end":{"line":57,"column":46}},"19":{"start":{"line":60,"column":12},"end":{"line":60,"column":35}},"20":{"start":{"line":61,"column":12},"end":{"line":61,"column":49}},"21":{"start":{"line":64,"column":8},"end":{"line":64,"column":53}}},"branchMap":{"1":{"line":26,"type":"binary-expr","locations":[{"start":{"line":26,"column":23},"end":{"line":26,"column":62}},{"start":{"line":27,"column":20},"end":{"line":27,"column":70}},{"start":{"line":28,"column":20},"end":{"line":28,"column":71}},{"start":{"line":29,"column":20},"end":{"line":29,"column":29}}]},"2":{"line":31,"type":"binary-expr","locations":[{"start":{"line":31,"column":23},"end":{"line":31,"column":37}},{"start":{"line":32,"column":20},"end":{"line":32,"column":61}},{"start":{"line":33,"column":20},"end":{"line":33,"column":70}},{"start":{"line":34,"column":20},"end":{"line":34,"column":26}}]},"3":{"line":38,"type":"cond-expr","locations":[{"start":{"line":39,"column":14},"end":{"line":39,"column":20}},{"start":{"line":40,"column":14},"end":{"line":40,"column":20}}]},"4":{"line":42,"type":"binary-expr","locations":[{"start":{"line":42,"column":16},"end":{"line":42,"column":44}},{"start":{"line":42,"column":48},"end":{"line":42,"column":53}}]},"5":{"line":44,"type":"if","locations":[{"start":{"line":44,"column":8},"end":{"line":44,"column":8},"skip":true},{"start":{"line":44,"column":8},"end":{"line":44,"column":8},"skip":true}]},"6":{"line":45,"type":"binary-expr","locations":[{"start":{"line":45,"column":20},"end":{"line":45,"column":48},"skip":true},{"start":{"line":46,"column":16},"end":{"line":46,"column":48},"skip":true},{"start":{"line":47,"column":16},"end":{"line":47,"column":54},"skip":true}]},"7":{"line":51,"type":"if","locations":[{"start":{"line":51,"column":8},"end":{"line":51,"column":8}},{"start":{"line":51,"column":8},"end":{"line":51,"column":8}}]},"8":{"line":56,"type":"if","locations":[{"start":{"line":56,"column":16},"end":{"line":56,"column":16}},{"start":{"line":56,"column":16},"end":{"line":56,"column":16}}]},"9":{"line":56,"type":"binary-expr","locations":[{"start":{"line":56,"column":20},"end":{"line":56,"column":31}},{"start":{"line":56,"column":35},"end":{"line":56,"column":69}}]}},"code":["/* istanbul instrument in package swgg_github_misc */","/* jslint-utility2 */","/*jslint","    bitwise: true,","    browser: true,","    maxerr: 4,","    maxlen: 100,","    node: true,","    nomen: true,","    regexp: true,","    stupid: true","*/","(function () {","    'use strict';","    var local;","","","","    // run shared js-env code - init-before","    (function () {","        // init local","        local = {};","        // init modeJs","        local.modeJs = (function () {","            try {","                return typeof navigator.userAgent === 'string' &&","                    typeof document.querySelector('body') === 'object' &&","                    typeof XMLHttpRequest.prototype.open === 'function' &&","                    'browser';","            } catch (errorCaughtBrowser) {","                return module.exports &&","                    typeof process.versions.node === 'string' &&","                    typeof require('http').createServer === 'function' &&","                    'node';","            }","        }());","        // init global","        local.global = local.modeJs === 'browser'","            ? window","            : global;","        // init utility2_rollup","        local = local.global.utility2_rollup || local;","        /* istanbul ignore next */","        if (local) {","            local = local.global.utility2_rollup ||","                local.global.utility2_rollup_old ||","                require('./assets.utility2.rollup.js');","            local.fs = null;","        }","        // init exports","        if (local.modeJs === 'browser') {","            local.global.utility2_swgg_github_misc = local;","        } else {","            // require builtins","            Object.keys(process.binding('natives')).forEach(function (key) {","                if (!local[key] && !(/\\/|^_|^assert|^sys$/).test(key)) {","                    local[key] = require(key);","                }","            });","            module.exports = local;","            module.exports.__dirname = __dirname;","        }","        // init lib","        local.local = local.swgg_github_misc = local;","    }());","}());",""]};
+}
+__cov_5fb33c7367d96 = __cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'];
+__cov_5fb33c7367d96.s['1']++;(function(){'use strict';__cov_5fb33c7367d96.f['1']++;__cov_5fb33c7367d96.s['2']++;var local;__cov_5fb33c7367d96.s['3']++;(function(){__cov_5fb33c7367d96.f['2']++;__cov_5fb33c7367d96.s['4']++;local={};__cov_5fb33c7367d96.s['5']++;local.modeJs=function(){__cov_5fb33c7367d96.f['3']++;__cov_5fb33c7367d96.s['6']++;try{__cov_5fb33c7367d96.s['7']++;return(__cov_5fb33c7367d96.b['1'][0]++,typeof navigator.userAgent==='string')&&(__cov_5fb33c7367d96.b['1'][1]++,typeof document.querySelector('body')==='object')&&(__cov_5fb33c7367d96.b['1'][2]++,typeof XMLHttpRequest.prototype.open==='function')&&(__cov_5fb33c7367d96.b['1'][3]++,'browser');}catch(errorCaughtBrowser){__cov_5fb33c7367d96.s['8']++;return(__cov_5fb33c7367d96.b['2'][0]++,module.exports)&&(__cov_5fb33c7367d96.b['2'][1]++,typeof process.versions.node==='string')&&(__cov_5fb33c7367d96.b['2'][2]++,typeof require('http').createServer==='function')&&(__cov_5fb33c7367d96.b['2'][3]++,'node');}}();__cov_5fb33c7367d96.s['9']++;local.global=local.modeJs==='browser'?(__cov_5fb33c7367d96.b['3'][0]++,window):(__cov_5fb33c7367d96.b['3'][1]++,global);__cov_5fb33c7367d96.s['10']++;local=(__cov_5fb33c7367d96.b['4'][0]++,local.global.utility2_rollup)||(__cov_5fb33c7367d96.b['4'][1]++,local);__cov_5fb33c7367d96.s['11']++;if(local){__cov_5fb33c7367d96.b['5'][0]++;__cov_5fb33c7367d96.s['12']++;local=(__cov_5fb33c7367d96.b['6'][0]++,local.global.utility2_rollup)||(__cov_5fb33c7367d96.b['6'][1]++,local.global.utility2_rollup_old)||(__cov_5fb33c7367d96.b['6'][2]++,require('./assets.utility2.rollup.js'));__cov_5fb33c7367d96.s['13']++;local.fs=null;}else{__cov_5fb33c7367d96.b['5'][1]++;}__cov_5fb33c7367d96.s['14']++;if(local.modeJs==='browser'){__cov_5fb33c7367d96.b['7'][0]++;__cov_5fb33c7367d96.s['15']++;local.global.utility2_swgg_github_misc=local;}else{__cov_5fb33c7367d96.b['7'][1]++;__cov_5fb33c7367d96.s['16']++;Object.keys(process.binding('natives')).forEach(function(key){__cov_5fb33c7367d96.f['4']++;__cov_5fb33c7367d96.s['17']++;if((__cov_5fb33c7367d96.b['9'][0]++,!local[key])&&(__cov_5fb33c7367d96.b['9'][1]++,!/\/|^_|^assert|^sys$/.test(key))){__cov_5fb33c7367d96.b['8'][0]++;__cov_5fb33c7367d96.s['18']++;local[key]=require(key);}else{__cov_5fb33c7367d96.b['8'][1]++;}});__cov_5fb33c7367d96.s['19']++;module.exports=local;__cov_5fb33c7367d96.s['20']++;module.exports.__dirname=__dirname;}__cov_5fb33c7367d96.s['21']++;local.local=local.swgg_github_misc=local;}());}());

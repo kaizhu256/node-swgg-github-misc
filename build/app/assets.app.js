@@ -32028,360 +32028,52 @@ local.stateInit({
         global.utility2_rollup;
     local.local = local;
 /* jslint-ignore-begin */
-local.assetsDict["/assets.swgg_github_misc.js"] = "/* istanbul instrument in package swgg_github_misc */\n\
-/* jslint-utility2 */\n\
-/*jslint\n\
-    bitwise: true,\n\
-    browser: true,\n\
-    maxerr: 4,\n\
-    maxlen: 100,\n\
-    node: true,\n\
-    nomen: true,\n\
-    regexp: true,\n\
-    stupid: true\n\
-*/\n\
-(function () {\n\
-    'use strict';\n\
-    var local;\n\
-\n\
-\n\
-\n\
-    // run shared js-env code - init-before\n\
-    (function () {\n\
-        // init local\n\
-        local = {};\n\
-        // init modeJs\n\
-        local.modeJs = (function () {\n\
-            try {\n\
-                return typeof navigator.userAgent === 'string' &&\n\
-                    typeof document.querySelector('body') === 'object' &&\n\
-                    typeof XMLHttpRequest.prototype.open === 'function' &&\n\
-                    'browser';\n\
-            } catch (errorCaughtBrowser) {\n\
-                return module.exports &&\n\
-                    typeof process.versions.node === 'string' &&\n\
-                    typeof require('http').createServer === 'function' &&\n\
-                    'node';\n\
-            }\n\
-        }());\n\
-        // init global\n\
-        local.global = local.modeJs === 'browser'\n\
-            ? window\n\
-            : global;\n\
-        // init utility2_rollup\n\
-        local = local.global.utility2_rollup || local;\n\
-        /* istanbul ignore next */\n\
-        if (local) {\n\
-            local = local.global.utility2_rollup ||\n\
-                local.global.utility2_rollup_old ||\n\
-                require('./assets.utility2.rollup.js');\n\
-            local.fs = null;\n\
-        }\n\
-        // init exports\n\
-        if (local.modeJs === 'browser') {\n\
-            local.global.utility2_swgg_github_misc = local;\n\
-        } else {\n\
-            // require builtins\n\
-            Object.keys(process.binding('natives')).forEach(function (key) {\n\
-                if (!local[key] && !(/\\/|^_|^assert|^sys$/).test(key)) {\n\
-                    local[key] = require(key);\n\
-                }\n\
-            });\n\
-            module.exports = local;\n\
-            module.exports.__dirname = __dirname;\n\
-        }\n\
-        // init lib\n\
-        local.local = local.swgg_github_misc = local;\n\
-    }());\n\
-}());\n\
+local.assetsDict["/assets.swgg_github_misc.js"] = "var __cov_5fb33c7367d96 = (Function('return this'))();\n\
+if (!__cov_5fb33c7367d96.__coverage__) { __cov_5fb33c7367d96.__coverage__ = {}; }\n\
+__cov_5fb33c7367d96 = __cov_5fb33c7367d96.__coverage__;\n\
+if (!(__cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'])) {\n\
+   __cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'] = {\"path\":\"/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js\",\"s\":{\"1\":0,\"2\":0,\"3\":0,\"4\":0,\"5\":0,\"6\":0,\"7\":0,\"8\":0,\"9\":0,\"10\":0,\"11\":0,\"12\":0,\"13\":0,\"14\":0,\"15\":0,\"16\":0,\"17\":0,\"18\":0,\"19\":0,\"20\":0,\"21\":0},\"b\":{\"1\":[0,0,0,0],\"2\":[0,0,0,0],\"3\":[0,0],\"4\":[0,0],\"5\":[0,0],\"6\":[0,0,0],\"7\":[0,0],\"8\":[0,0],\"9\":[0,0]},\"f\":{\"1\":0,\"2\":0,\"3\":0,\"4\":0},\"fnMap\":{\"1\":{\"name\":\"(anonymous_1)\",\"line\":13,\"loc\":{\"start\":{\"line\":13,\"column\":1},\"end\":{\"line\":13,\"column\":13}}},\"2\":{\"name\":\"(anonymous_2)\",\"line\":20,\"loc\":{\"start\":{\"line\":20,\"column\":5},\"end\":{\"line\":20,\"column\":17}}},\"3\":{\"name\":\"(anonymous_3)\",\"line\":24,\"loc\":{\"start\":{\"line\":24,\"column\":24},\"end\":{\"line\":24,\"column\":36}}},\"4\":{\"name\":\"(anonymous_4)\",\"line\":55,\"loc\":{\"start\":{\"line\":55,\"column\":60},\"end\":{\"line\":55,\"column\":75}}}},\"statementMap\":{\"1\":{\"start\":{\"line\":13,\"column\":0},\"end\":{\"line\":66,\"column\":5}},\"2\":{\"start\":{\"line\":15,\"column\":4},\"end\":{\"line\":15,\"column\":14}},\"3\":{\"start\":{\"line\":20,\"column\":4},\"end\":{\"line\":65,\"column\":9}},\"4\":{\"start\":{\"line\":22,\"column\":8},\"end\":{\"line\":22,\"column\":19}},\"5\":{\"start\":{\"line\":24,\"column\":8},\"end\":{\"line\":36,\"column\":13}},\"6\":{\"start\":{\"line\":25,\"column\":12},\"end\":{\"line\":35,\"column\":13}},\"7\":{\"start\":{\"line\":26,\"column\":16},\"end\":{\"line\":29,\"column\":30}},\"8\":{\"start\":{\"line\":31,\"column\":16},\"end\":{\"line\":34,\"column\":27}},\"9\":{\"start\":{\"line\":38,\"column\":8},\"end\":{\"line\":40,\"column\":21}},\"10\":{\"start\":{\"line\":42,\"column\":8},\"end\":{\"line\":42,\"column\":54}},\"11\":{\"start\":{\"line\":44,\"column\":8},\"end\":{\"line\":49,\"column\":9},\"skip\":true},\"12\":{\"start\":{\"line\":45,\"column\":12},\"end\":{\"line\":47,\"column\":55},\"skip\":true},\"13\":{\"start\":{\"line\":48,\"column\":12},\"end\":{\"line\":48,\"column\":28},\"skip\":true},\"14\":{\"start\":{\"line\":51,\"column\":8},\"end\":{\"line\":62,\"column\":9}},\"15\":{\"start\":{\"line\":52,\"column\":12},\"end\":{\"line\":52,\"column\":59}},\"16\":{\"start\":{\"line\":55,\"column\":12},\"end\":{\"line\":59,\"column\":15}},\"17\":{\"start\":{\"line\":56,\"column\":16},\"end\":{\"line\":58,\"column\":17}},\"18\":{\"start\":{\"line\":57,\"column\":20},\"end\":{\"line\":57,\"column\":46}},\"19\":{\"start\":{\"line\":60,\"column\":12},\"end\":{\"line\":60,\"column\":35}},\"20\":{\"start\":{\"line\":61,\"column\":12},\"end\":{\"line\":61,\"column\":49}},\"21\":{\"start\":{\"line\":64,\"column\":8},\"end\":{\"line\":64,\"column\":53}}},\"branchMap\":{\"1\":{\"line\":26,\"type\":\"binary-expr\",\"locations\":[{\"start\":{\"line\":26,\"column\":23},\"end\":{\"line\":26,\"column\":62}},{\"start\":{\"line\":27,\"column\":20},\"end\":{\"line\":27,\"column\":70}},{\"start\":{\"line\":28,\"column\":20},\"end\":{\"line\":28,\"column\":71}},{\"start\":{\"line\":29,\"column\":20},\"end\":{\"line\":29,\"column\":29}}]},\"2\":{\"line\":31,\"type\":\"binary-expr\",\"locations\":[{\"start\":{\"line\":31,\"column\":23},\"end\":{\"line\":31,\"column\":37}},{\"start\":{\"line\":32,\"column\":20},\"end\":{\"line\":32,\"column\":61}},{\"start\":{\"line\":33,\"column\":20},\"end\":{\"line\":33,\"column\":70}},{\"start\":{\"line\":34,\"column\":20},\"end\":{\"line\":34,\"column\":26}}]},\"3\":{\"line\":38,\"type\":\"cond-expr\",\"locations\":[{\"start\":{\"line\":39,\"column\":14},\"end\":{\"line\":39,\"column\":20}},{\"start\":{\"line\":40,\"column\":14},\"end\":{\"line\":40,\"column\":20}}]},\"4\":{\"line\":42,\"type\":\"binary-expr\",\"locations\":[{\"start\":{\"line\":42,\"column\":16},\"end\":{\"line\":42,\"column\":44}},{\"start\":{\"line\":42,\"column\":48},\"end\":{\"line\":42,\"column\":53}}]},\"5\":{\"line\":44,\"type\":\"if\",\"locations\":[{\"start\":{\"line\":44,\"column\":8},\"end\":{\"line\":44,\"column\":8},\"skip\":true},{\"start\":{\"line\":44,\"column\":8},\"end\":{\"line\":44,\"column\":8},\"skip\":true}]},\"6\":{\"line\":45,\"type\":\"binary-expr\",\"locations\":[{\"start\":{\"line\":45,\"column\":20},\"end\":{\"line\":45,\"column\":48},\"skip\":true},{\"start\":{\"line\":46,\"column\":16},\"end\":{\"line\":46,\"column\":48},\"skip\":true},{\"start\":{\"line\":47,\"column\":16},\"end\":{\"line\":47,\"column\":54},\"skip\":true}]},\"7\":{\"line\":51,\"type\":\"if\",\"locations\":[{\"start\":{\"line\":51,\"column\":8},\"end\":{\"line\":51,\"column\":8}},{\"start\":{\"line\":51,\"column\":8},\"end\":{\"line\":51,\"column\":8}}]},\"8\":{\"line\":56,\"type\":\"if\",\"locations\":[{\"start\":{\"line\":56,\"column\":16},\"end\":{\"line\":56,\"column\":16}},{\"start\":{\"line\":56,\"column\":16},\"end\":{\"line\":56,\"column\":16}}]},\"9\":{\"line\":56,\"type\":\"binary-expr\",\"locations\":[{\"start\":{\"line\":56,\"column\":20},\"end\":{\"line\":56,\"column\":31}},{\"start\":{\"line\":56,\"column\":35},\"end\":{\"line\":56,\"column\":69}}]}},\"code\":[\"/* istanbul instrument in package swgg_github_misc */\",\"/* jslint-utility2 */\",\"/*jslint\",\"    bitwise: true,\",\"    browser: true,\",\"    maxerr: 4,\",\"    maxlen: 100,\",\"    node: true,\",\"    nomen: true,\",\"    regexp: true,\",\"    stupid: true\",\"*/\",\"(function () {\",\"    'use strict';\",\"    var local;\",\"\",\"\",\"\",\"    // run shared js-env code - init-before\",\"    (function () {\",\"        // init local\",\"        local = {};\",\"        // init modeJs\",\"        local.modeJs = (function () {\",\"            try {\",\"                return typeof navigator.userAgent === 'string' &&\",\"                    typeof document.querySelector('body') === 'object' &&\",\"                    typeof XMLHttpRequest.prototype.open === 'function' &&\",\"                    'browser';\",\"            } catch (errorCaughtBrowser) {\",\"                return module.exports &&\",\"                    typeof process.versions.node === 'string' &&\",\"                    typeof require('http').createServer === 'function' &&\",\"                    'node';\",\"            }\",\"        }());\",\"        // init global\",\"        local.global = local.modeJs === 'browser'\",\"            ? window\",\"            : global;\",\"        // init utility2_rollup\",\"        local = local.global.utility2_rollup || local;\",\"        /* istanbul ignore next */\",\"        if (local) {\",\"            local = local.global.utility2_rollup ||\",\"                local.global.utility2_rollup_old ||\",\"                require('./assets.utility2.rollup.js');\",\"            local.fs = null;\",\"        }\",\"        // init exports\",\"        if (local.modeJs === 'browser') {\",\"            local.global.utility2_swgg_github_misc = local;\",\"        } else {\",\"            // require builtins\",\"            Object.keys(process.binding('natives')).forEach(function (key) {\",\"                if (!local[key] && !(/\\\\/|^_|^assert|^sys$/).test(key)) {\",\"                    local[key] = require(key);\",\"                }\",\"            });\",\"            module.exports = local;\",\"            module.exports.__dirname = __dirname;\",\"        }\",\"        // init lib\",\"        local.local = local.swgg_github_misc = local;\",\"    }());\",\"}());\",\"\"]};\n\
+}\n\
+__cov_5fb33c7367d96 = __cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'];\n\
+__cov_5fb33c7367d96.s['1']++;(function(){'use strict';__cov_5fb33c7367d96.f['1']++;__cov_5fb33c7367d96.s['2']++;var local;__cov_5fb33c7367d96.s['3']++;(function(){__cov_5fb33c7367d96.f['2']++;__cov_5fb33c7367d96.s['4']++;local={};__cov_5fb33c7367d96.s['5']++;local.modeJs=function(){__cov_5fb33c7367d96.f['3']++;__cov_5fb33c7367d96.s['6']++;try{__cov_5fb33c7367d96.s['7']++;return(__cov_5fb33c7367d96.b['1'][0]++,typeof navigator.userAgent==='string')&&(__cov_5fb33c7367d96.b['1'][1]++,typeof document.querySelector('body')==='object')&&(__cov_5fb33c7367d96.b['1'][2]++,typeof XMLHttpRequest.prototype.open==='function')&&(__cov_5fb33c7367d96.b['1'][3]++,'browser');}catch(errorCaughtBrowser){__cov_5fb33c7367d96.s['8']++;return(__cov_5fb33c7367d96.b['2'][0]++,module.exports)&&(__cov_5fb33c7367d96.b['2'][1]++,typeof process.versions.node==='string')&&(__cov_5fb33c7367d96.b['2'][2]++,typeof require('http').createServer==='function')&&(__cov_5fb33c7367d96.b['2'][3]++,'node');}}();__cov_5fb33c7367d96.s['9']++;local.global=local.modeJs==='browser'?(__cov_5fb33c7367d96.b['3'][0]++,window):(__cov_5fb33c7367d96.b['3'][1]++,global);__cov_5fb33c7367d96.s['10']++;local=(__cov_5fb33c7367d96.b['4'][0]++,local.global.utility2_rollup)||(__cov_5fb33c7367d96.b['4'][1]++,local);__cov_5fb33c7367d96.s['11']++;if(local){__cov_5fb33c7367d96.b['5'][0]++;__cov_5fb33c7367d96.s['12']++;local=(__cov_5fb33c7367d96.b['6'][0]++,local.global.utility2_rollup)||(__cov_5fb33c7367d96.b['6'][1]++,local.global.utility2_rollup_old)||(__cov_5fb33c7367d96.b['6'][2]++,require('./assets.utility2.rollup.js'));__cov_5fb33c7367d96.s['13']++;local.fs=null;}else{__cov_5fb33c7367d96.b['5'][1]++;}__cov_5fb33c7367d96.s['14']++;if(local.modeJs==='browser'){__cov_5fb33c7367d96.b['7'][0]++;__cov_5fb33c7367d96.s['15']++;local.global.utility2_swgg_github_misc=local;}else{__cov_5fb33c7367d96.b['7'][1]++;__cov_5fb33c7367d96.s['16']++;Object.keys(process.binding('natives')).forEach(function(key){__cov_5fb33c7367d96.f['4']++;__cov_5fb33c7367d96.s['17']++;if((__cov_5fb33c7367d96.b['9'][0]++,!local[key])&&(__cov_5fb33c7367d96.b['9'][1]++,!/\\/|^_|^assert|^sys$/.test(key))){__cov_5fb33c7367d96.b['8'][0]++;__cov_5fb33c7367d96.s['18']++;local[key]=require(key);}else{__cov_5fb33c7367d96.b['8'][1]++;}});__cov_5fb33c7367d96.s['19']++;module.exports=local;__cov_5fb33c7367d96.s['20']++;module.exports.__dirname=__dirname;}__cov_5fb33c7367d96.s['21']++;local.local=local.swgg_github_misc=local;}());}());\n\
 "
 /* jslint-ignore-end */
 }());
 
-/* istanbul instrument in package swgg_github_misc */
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
-(function () {
-    'use strict';
-    var local;
-
-
-
-    // run shared js-env code - init-before
-    (function () {
-        // init local
-        local = {};
-        // init modeJs
-        local.modeJs = (function () {
-            try {
-                return typeof navigator.userAgent === 'string' &&
-                    typeof document.querySelector('body') === 'object' &&
-                    typeof XMLHttpRequest.prototype.open === 'function' &&
-                    'browser';
-            } catch (errorCaughtBrowser) {
-                return module.exports &&
-                    typeof process.versions.node === 'string' &&
-                    typeof require('http').createServer === 'function' &&
-                    'node';
-            }
-        }());
-        // init global
-        local.global = local.modeJs === 'browser'
-            ? window
-            : global;
-        // init utility2_rollup
-        local = local.global.utility2_rollup || local;
-        /* istanbul ignore next */
-        if (local) {
-            local = local.global.utility2_rollup ||
-                local.global.utility2_rollup_old ||
-                require('./assets.utility2.rollup.js');
-            local.fs = null;
-        }
-        // init exports
-        if (local.modeJs === 'browser') {
-            local.global.utility2_swgg_github_misc = local;
-        } else {
-            // require builtins
-            Object.keys(process.binding('natives')).forEach(function (key) {
-                if (!local[key] && !(/\/|^_|^assert|^sys$/).test(key)) {
-                    local[key] = require(key);
-                }
-            });
-            module.exports = local;
-            module.exports.__dirname = __dirname;
-        }
-        // init lib
-        local.local = local.swgg_github_misc = local;
-    }());
-}());
+var __cov_5fb33c7367d96 = (Function('return this'))();
+if (!__cov_5fb33c7367d96.__coverage__) { __cov_5fb33c7367d96.__coverage__ = {}; }
+__cov_5fb33c7367d96 = __cov_5fb33c7367d96.__coverage__;
+if (!(__cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'])) {
+   __cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'] = {"path":"/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js","s":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0,"20":0,"21":0},"b":{"1":[0,0,0,0],"2":[0,0,0,0],"3":[0,0],"4":[0,0],"5":[0,0],"6":[0,0,0],"7":[0,0],"8":[0,0],"9":[0,0]},"f":{"1":0,"2":0,"3":0,"4":0},"fnMap":{"1":{"name":"(anonymous_1)","line":13,"loc":{"start":{"line":13,"column":1},"end":{"line":13,"column":13}}},"2":{"name":"(anonymous_2)","line":20,"loc":{"start":{"line":20,"column":5},"end":{"line":20,"column":17}}},"3":{"name":"(anonymous_3)","line":24,"loc":{"start":{"line":24,"column":24},"end":{"line":24,"column":36}}},"4":{"name":"(anonymous_4)","line":55,"loc":{"start":{"line":55,"column":60},"end":{"line":55,"column":75}}}},"statementMap":{"1":{"start":{"line":13,"column":0},"end":{"line":66,"column":5}},"2":{"start":{"line":15,"column":4},"end":{"line":15,"column":14}},"3":{"start":{"line":20,"column":4},"end":{"line":65,"column":9}},"4":{"start":{"line":22,"column":8},"end":{"line":22,"column":19}},"5":{"start":{"line":24,"column":8},"end":{"line":36,"column":13}},"6":{"start":{"line":25,"column":12},"end":{"line":35,"column":13}},"7":{"start":{"line":26,"column":16},"end":{"line":29,"column":30}},"8":{"start":{"line":31,"column":16},"end":{"line":34,"column":27}},"9":{"start":{"line":38,"column":8},"end":{"line":40,"column":21}},"10":{"start":{"line":42,"column":8},"end":{"line":42,"column":54}},"11":{"start":{"line":44,"column":8},"end":{"line":49,"column":9},"skip":true},"12":{"start":{"line":45,"column":12},"end":{"line":47,"column":55},"skip":true},"13":{"start":{"line":48,"column":12},"end":{"line":48,"column":28},"skip":true},"14":{"start":{"line":51,"column":8},"end":{"line":62,"column":9}},"15":{"start":{"line":52,"column":12},"end":{"line":52,"column":59}},"16":{"start":{"line":55,"column":12},"end":{"line":59,"column":15}},"17":{"start":{"line":56,"column":16},"end":{"line":58,"column":17}},"18":{"start":{"line":57,"column":20},"end":{"line":57,"column":46}},"19":{"start":{"line":60,"column":12},"end":{"line":60,"column":35}},"20":{"start":{"line":61,"column":12},"end":{"line":61,"column":49}},"21":{"start":{"line":64,"column":8},"end":{"line":64,"column":53}}},"branchMap":{"1":{"line":26,"type":"binary-expr","locations":[{"start":{"line":26,"column":23},"end":{"line":26,"column":62}},{"start":{"line":27,"column":20},"end":{"line":27,"column":70}},{"start":{"line":28,"column":20},"end":{"line":28,"column":71}},{"start":{"line":29,"column":20},"end":{"line":29,"column":29}}]},"2":{"line":31,"type":"binary-expr","locations":[{"start":{"line":31,"column":23},"end":{"line":31,"column":37}},{"start":{"line":32,"column":20},"end":{"line":32,"column":61}},{"start":{"line":33,"column":20},"end":{"line":33,"column":70}},{"start":{"line":34,"column":20},"end":{"line":34,"column":26}}]},"3":{"line":38,"type":"cond-expr","locations":[{"start":{"line":39,"column":14},"end":{"line":39,"column":20}},{"start":{"line":40,"column":14},"end":{"line":40,"column":20}}]},"4":{"line":42,"type":"binary-expr","locations":[{"start":{"line":42,"column":16},"end":{"line":42,"column":44}},{"start":{"line":42,"column":48},"end":{"line":42,"column":53}}]},"5":{"line":44,"type":"if","locations":[{"start":{"line":44,"column":8},"end":{"line":44,"column":8},"skip":true},{"start":{"line":44,"column":8},"end":{"line":44,"column":8},"skip":true}]},"6":{"line":45,"type":"binary-expr","locations":[{"start":{"line":45,"column":20},"end":{"line":45,"column":48},"skip":true},{"start":{"line":46,"column":16},"end":{"line":46,"column":48},"skip":true},{"start":{"line":47,"column":16},"end":{"line":47,"column":54},"skip":true}]},"7":{"line":51,"type":"if","locations":[{"start":{"line":51,"column":8},"end":{"line":51,"column":8}},{"start":{"line":51,"column":8},"end":{"line":51,"column":8}}]},"8":{"line":56,"type":"if","locations":[{"start":{"line":56,"column":16},"end":{"line":56,"column":16}},{"start":{"line":56,"column":16},"end":{"line":56,"column":16}}]},"9":{"line":56,"type":"binary-expr","locations":[{"start":{"line":56,"column":20},"end":{"line":56,"column":31}},{"start":{"line":56,"column":35},"end":{"line":56,"column":69}}]}},"code":["/* istanbul instrument in package swgg_github_misc */","/* jslint-utility2 */","/*jslint","    bitwise: true,","    browser: true,","    maxerr: 4,","    maxlen: 100,","    node: true,","    nomen: true,","    regexp: true,","    stupid: true","*/","(function () {","    'use strict';","    var local;","","","","    // run shared js-env code - init-before","    (function () {","        // init local","        local = {};","        // init modeJs","        local.modeJs = (function () {","            try {","                return typeof navigator.userAgent === 'string' &&","                    typeof document.querySelector('body') === 'object' &&","                    typeof XMLHttpRequest.prototype.open === 'function' &&","                    'browser';","            } catch (errorCaughtBrowser) {","                return module.exports &&","                    typeof process.versions.node === 'string' &&","                    typeof require('http').createServer === 'function' &&","                    'node';","            }","        }());","        // init global","        local.global = local.modeJs === 'browser'","            ? window","            : global;","        // init utility2_rollup","        local = local.global.utility2_rollup || local;","        /* istanbul ignore next */","        if (local) {","            local = local.global.utility2_rollup ||","                local.global.utility2_rollup_old ||","                require('./assets.utility2.rollup.js');","            local.fs = null;","        }","        // init exports","        if (local.modeJs === 'browser') {","            local.global.utility2_swgg_github_misc = local;","        } else {","            // require builtins","            Object.keys(process.binding('natives')).forEach(function (key) {","                if (!local[key] && !(/\\/|^_|^assert|^sys$/).test(key)) {","                    local[key] = require(key);","                }","            });","            module.exports = local;","            module.exports.__dirname = __dirname;","        }","        // init lib","        local.local = local.swgg_github_misc = local;","    }());","}());",""]};
+}
+__cov_5fb33c7367d96 = __cov_5fb33c7367d96['/home/travis/build/kaizhu256/node-swgg-github-misc/lib.swgg_github_misc.js'];
+__cov_5fb33c7367d96.s['1']++;(function(){'use strict';__cov_5fb33c7367d96.f['1']++;__cov_5fb33c7367d96.s['2']++;var local;__cov_5fb33c7367d96.s['3']++;(function(){__cov_5fb33c7367d96.f['2']++;__cov_5fb33c7367d96.s['4']++;local={};__cov_5fb33c7367d96.s['5']++;local.modeJs=function(){__cov_5fb33c7367d96.f['3']++;__cov_5fb33c7367d96.s['6']++;try{__cov_5fb33c7367d96.s['7']++;return(__cov_5fb33c7367d96.b['1'][0]++,typeof navigator.userAgent==='string')&&(__cov_5fb33c7367d96.b['1'][1]++,typeof document.querySelector('body')==='object')&&(__cov_5fb33c7367d96.b['1'][2]++,typeof XMLHttpRequest.prototype.open==='function')&&(__cov_5fb33c7367d96.b['1'][3]++,'browser');}catch(errorCaughtBrowser){__cov_5fb33c7367d96.s['8']++;return(__cov_5fb33c7367d96.b['2'][0]++,module.exports)&&(__cov_5fb33c7367d96.b['2'][1]++,typeof process.versions.node==='string')&&(__cov_5fb33c7367d96.b['2'][2]++,typeof require('http').createServer==='function')&&(__cov_5fb33c7367d96.b['2'][3]++,'node');}}();__cov_5fb33c7367d96.s['9']++;local.global=local.modeJs==='browser'?(__cov_5fb33c7367d96.b['3'][0]++,window):(__cov_5fb33c7367d96.b['3'][1]++,global);__cov_5fb33c7367d96.s['10']++;local=(__cov_5fb33c7367d96.b['4'][0]++,local.global.utility2_rollup)||(__cov_5fb33c7367d96.b['4'][1]++,local);__cov_5fb33c7367d96.s['11']++;if(local){__cov_5fb33c7367d96.b['5'][0]++;__cov_5fb33c7367d96.s['12']++;local=(__cov_5fb33c7367d96.b['6'][0]++,local.global.utility2_rollup)||(__cov_5fb33c7367d96.b['6'][1]++,local.global.utility2_rollup_old)||(__cov_5fb33c7367d96.b['6'][2]++,require('./assets.utility2.rollup.js'));__cov_5fb33c7367d96.s['13']++;local.fs=null;}else{__cov_5fb33c7367d96.b['5'][1]++;}__cov_5fb33c7367d96.s['14']++;if(local.modeJs==='browser'){__cov_5fb33c7367d96.b['7'][0]++;__cov_5fb33c7367d96.s['15']++;local.global.utility2_swgg_github_misc=local;}else{__cov_5fb33c7367d96.b['7'][1]++;__cov_5fb33c7367d96.s['16']++;Object.keys(process.binding('natives')).forEach(function(key){__cov_5fb33c7367d96.f['4']++;__cov_5fb33c7367d96.s['17']++;if((__cov_5fb33c7367d96.b['9'][0]++,!local[key])&&(__cov_5fb33c7367d96.b['9'][1]++,!/\/|^_|^assert|^sys$/.test(key))){__cov_5fb33c7367d96.b['8'][0]++;__cov_5fb33c7367d96.s['18']++;local[key]=require(key);}else{__cov_5fb33c7367d96.b['8'][1]++;}});__cov_5fb33c7367d96.s['19']++;module.exports=local;__cov_5fb33c7367d96.s['20']++;module.exports.__dirname=__dirname;}__cov_5fb33c7367d96.s['21']++;local.local=local.swgg_github_misc=local;}());}());
 /* script-end /assets.lib.js */
 
 
 
 /* script-begin /assets.example.js */
-/*
-example.js
-
-this script will run a web-demo of swgg-github-misc
-
-instruction
-    1. save this script as example.js
-    2. run the shell command:
-        $ npm install swgg-github-misc && PORT=8081 node example.js
-    3. open a browser to http://127.0.0.1:8081 and play with the web-demo
-    4. edit this script to suit your needs
-*/
-
-
-
-/* istanbul instrument in package swgg_github_misc */
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
-(function () {
-    'use strict';
-    var local;
-
-
-
-    // run shared js-env code - init-before
-    (function () {
-        // init local
-        local = {};
-        // init modeJs
-        local.modeJs = (function () {
-            try {
-                return typeof navigator.userAgent === 'string' &&
-                    typeof document.querySelector('body') === 'object' &&
-                    typeof XMLHttpRequest.prototype.open === 'function' &&
-                    'browser';
-            } catch (errorCaughtBrowser) {
-                return module.exports &&
-                    typeof process.versions.node === 'string' &&
-                    typeof require('http').createServer === 'function' &&
-                    'node';
-            }
-        }());
-        // init global
-        local.global = local.modeJs === 'browser'
-            ? window
-            : global;
-        // init utility2_rollup
-        local = local.global.utility2_rollup || (local.modeJs === 'browser'
-            ? local.global.utility2_swgg_github_misc
-            : global.utility2_moduleExports);
-        // init exports
-        local.global.local = local;
-        // init assets
-        local.assetsDict['/assets.index.template.html'] = local.assetsDict['/assets.swgg.html'];
-    }());
-    switch (local.modeJs) {
-
-
-
-    // run browser js-env code - init-test
-    /* istanbul ignore next */
-    case 'browser':
-        break;
-
-
-
-    // run node js-env code - init-test
-    /* istanbul ignore next */
-    case 'node':
-        // init exports
-        module.exports = local;
-        // require builtins
-        Object.keys(process.binding('natives')).forEach(function (key) {
-            if (!local[key] && !(/\/|^_|^assert|^sys$/).test(key)) {
-                local[key] = require(key);
-            }
-        });
-        // init assets
-        local.assetsDict = local.assetsDict || {};
-        [
-            'assets.index.css',
-            'assets.index.template.html',
-            'assets.swgg.swagger.json',
-            'assets.swgg.swagger.server.json'
-        ].forEach(function (file) {
-            file = '/' + file;
-            local.assetsDict[file] = local.assetsDict[file] || '';
-            if (local.fs.existsSync(local.__dirname + file)) {
-                local.assetsDict[file] = local.fs.readFileSync(
-                    local.__dirname + file,
-                    'utf8'
-                );
-            }
-        });
-/* validateLineSortedReset */
-        local.assetsDict['/'] =
-            local.assetsDict['/assets.example.html'] =
-            local.assetsDict['/assets.index.template.html']
-            .replace((/\{\{env\.(\w+?)\}\}/g), function (match0, match1) {
-                switch (match1) {
-                case 'npm_package_description':
-                    return 'the greatest app in the world!';
-                case 'npm_package_name':
-                    return 'swgg-github-misc';
-                case 'npm_package_nameLib':
-                    return 'swgg_github_misc';
-                case 'npm_package_version':
-                    return '0.0.1';
-                default:
-                    return match0;
-                }
-            });
-        // init cli
-        if (module !== require.main || local.global.utility2_rollup) {
-            break;
-        }
-        local.assetsDict['/assets.example.js'] =
-            local.assetsDict['/assets.example.js'] ||
-            local.fs.readFileSync(__filename, 'utf8');
-        // bug-workaround - long $npm_package_buildCustomOrg
-        /* jslint-ignore-begin */
-        local.assetsDict['/assets.swgg_github_misc.js'] =
-            local.assetsDict['/assets.swgg_github_misc.js'] ||
-            local.fs.readFileSync(
-                local.__dirname + '/lib.swgg_github_misc.js',
-                'utf8'
-            ).replace((/^#!/), '//');
-        /* jslint-ignore-end */
-        local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';
-        // if $npm_config_timeout_exit exists,
-        // then exit this process after $npm_config_timeout_exit ms
-        if (Number(process.env.npm_config_timeout_exit)) {
-            setTimeout(process.exit, Number(process.env.npm_config_timeout_exit));
-        }
-        // start server
-        if (local.global.utility2_serverHttp1) {
-            break;
-        }
-        process.env.PORT = process.env.PORT || '8081';
-        console.error('server starting on port ' + process.env.PORT);
-        local.http.createServer(function (request, response) {
-            request.urlParsed = local.url.parse(request.url);
-            if (local.assetsDict[request.urlParsed.pathname] !== undefined) {
-                response.end(local.assetsDict[request.urlParsed.pathname]);
-                return;
-            }
-            response.statusCode = 404;
-            response.end();
-        }).listen(process.env.PORT);
-        break;
-    }
-}());
+var __cov_eae83be513079 = (Function('return this'))();
+if (!__cov_eae83be513079.__coverage__) { __cov_eae83be513079.__coverage__ = {}; }
+__cov_eae83be513079 = __cov_eae83be513079.__coverage__;
+if (!(__cov_eae83be513079['/home/travis/build/kaizhu256/node-swgg-github-misc/example.js'])) {
+   __cov_eae83be513079['/home/travis/build/kaizhu256/node-swgg-github-misc/example.js'] = {"path":"/home/travis/build/kaizhu256/node-swgg-github-misc/example.js","s":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0,"17":0,"18":0,"19":0,"20":0,"21":0,"22":0,"23":0,"24":0,"25":0,"26":0,"27":0,"28":0,"29":0,"30":0,"31":0,"32":0,"33":0,"34":0,"35":0,"36":0,"37":0,"38":0,"39":0,"40":0,"41":0,"42":0,"43":0,"44":0,"45":0,"46":0,"47":0,"48":0,"49":0,"50":0},"b":{"1":[0,0,0,0],"2":[0,0,0,0],"3":[0,0],"4":[0,0],"5":[0,0],"6":[0,0],"7":[0,0],"8":[0,0],"9":[0,0],"10":[0,0],"11":[0,0],"12":[0,0,0,0,0],"13":[0,0],"14":[0,0],"15":[0,0],"16":[0,0],"17":[0,0],"18":[0,0],"19":[0,0],"20":[0,0],"21":[0,0]},"f":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0},"fnMap":{"1":{"name":"(anonymous_1)","line":127,"loc":{"start":{"line":127,"column":1},"end":{"line":127,"column":13}}},"2":{"name":"(anonymous_2)","line":134,"loc":{"start":{"line":134,"column":5},"end":{"line":134,"column":17}}},"3":{"name":"(anonymous_3)","line":138,"loc":{"start":{"line":138,"column":24},"end":{"line":138,"column":36}}},"4":{"name":"(anonymous_4)","line":181,"loc":{"start":{"line":181,"column":56},"end":{"line":181,"column":71}},"skip":true},"5":{"name":"(anonymous_5)","line":193,"loc":{"start":{"line":193,"column":18},"end":{"line":193,"column":34}},"skip":true},"6":{"name":"(anonymous_6)","line":207,"loc":{"start":{"line":207,"column":47},"end":{"line":207,"column":73}},"skip":true},"7":{"name":"(anonymous_7)","line":249,"loc":{"start":{"line":249,"column":32},"end":{"line":249,"column":61}},"skip":true}},"statementMap":{"1":{"start":{"line":127,"column":0},"end":{"line":260,"column":5}},"2":{"start":{"line":129,"column":4},"end":{"line":129,"column":14}},"3":{"start":{"line":134,"column":4},"end":{"line":163,"column":9}},"4":{"start":{"line":136,"column":8},"end":{"line":136,"column":19}},"5":{"start":{"line":138,"column":8},"end":{"line":150,"column":13}},"6":{"start":{"line":139,"column":12},"end":{"line":149,"column":13}},"7":{"start":{"line":140,"column":16},"end":{"line":143,"column":30}},"8":{"start":{"line":145,"column":16},"end":{"line":148,"column":27}},"9":{"start":{"line":152,"column":8},"end":{"line":154,"column":21}},"10":{"start":{"line":156,"column":8},"end":{"line":158,"column":45}},"11":{"start":{"line":160,"column":8},"end":{"line":160,"column":35}},"12":{"start":{"line":162,"column":8},"end":{"line":162,"column":96}},"13":{"start":{"line":164,"column":4},"end":{"line":259,"column":5}},"14":{"start":{"line":171,"column":8},"end":{"line":171,"column":14},"skip":true},"15":{"start":{"line":179,"column":8},"end":{"line":179,"column":31},"skip":true},"16":{"start":{"line":181,"column":8},"end":{"line":185,"column":11},"skip":true},"17":{"start":{"line":182,"column":12},"end":{"line":184,"column":13},"skip":true},"18":{"start":{"line":183,"column":16},"end":{"line":183,"column":42},"skip":true},"19":{"start":{"line":187,"column":8},"end":{"line":187,"column":50},"skip":true},"20":{"start":{"line":188,"column":8},"end":{"line":202,"column":11},"skip":true},"21":{"start":{"line":194,"column":12},"end":{"line":194,"column":30},"skip":true},"22":{"start":{"line":195,"column":12},"end":{"line":195,"column":66},"skip":true},"23":{"start":{"line":196,"column":12},"end":{"line":201,"column":13},"skip":true},"24":{"start":{"line":197,"column":16},"end":{"line":200,"column":18},"skip":true},"25":{"start":{"line":204,"column":8},"end":{"line":220,"column":15},"skip":true},"26":{"start":{"line":208,"column":16},"end":{"line":219,"column":17},"skip":true},"27":{"start":{"line":210,"column":20},"end":{"line":210,"column":60},"skip":true},"28":{"start":{"line":212,"column":20},"end":{"line":212,"column":46},"skip":true},"29":{"start":{"line":214,"column":20},"end":{"line":214,"column":46},"skip":true},"30":{"start":{"line":216,"column":20},"end":{"line":216,"column":35},"skip":true},"31":{"start":{"line":218,"column":20},"end":{"line":218,"column":34},"skip":true},"32":{"start":{"line":222,"column":8},"end":{"line":224,"column":9},"skip":true},"33":{"start":{"line":223,"column":12},"end":{"line":223,"column":18},"skip":true},"34":{"start":{"line":225,"column":8},"end":{"line":227,"column":54},"skip":true},"35":{"start":{"line":230,"column":8},"end":{"line":235,"column":37},"skip":true},"36":{"start":{"line":237,"column":8},"end":{"line":237,"column":82},"skip":true},"37":{"start":{"line":240,"column":8},"end":{"line":242,"column":9},"skip":true},"38":{"start":{"line":241,"column":12},"end":{"line":241,"column":82},"skip":true},"39":{"start":{"line":244,"column":8},"end":{"line":246,"column":9},"skip":true},"40":{"start":{"line":245,"column":12},"end":{"line":245,"column":18},"skip":true},"41":{"start":{"line":247,"column":8},"end":{"line":247,"column":54},"skip":true},"42":{"start":{"line":248,"column":8},"end":{"line":248,"column":69},"skip":true},"43":{"start":{"line":249,"column":8},"end":{"line":257,"column":36},"skip":true},"44":{"start":{"line":250,"column":12},"end":{"line":250,"column":61},"skip":true},"45":{"start":{"line":251,"column":12},"end":{"line":254,"column":13},"skip":true},"46":{"start":{"line":252,"column":16},"end":{"line":252,"column":75},"skip":true},"47":{"start":{"line":253,"column":16},"end":{"line":253,"column":23},"skip":true},"48":{"start":{"line":255,"column":12},"end":{"line":255,"column":38},"skip":true},"49":{"start":{"line":256,"column":12},"end":{"line":256,"column":27},"skip":true},"50":{"start":{"line":258,"column":8},"end":{"line":258,"column":14},"skip":true}},"branchMap":{"1":{"line":140,"type":"binary-expr","locations":[{"start":{"line":140,"column":23},"end":{"line":140,"column":62}},{"start":{"line":141,"column":20},"end":{"line":141,"column":70}},{"start":{"line":142,"column":20},"end":{"line":142,"column":71}},{"start":{"line":143,"column":20},"end":{"line":143,"column":29}}]},"2":{"line":145,"type":"binary-expr","locations":[{"start":{"line":145,"column":23},"end":{"line":145,"column":37}},{"start":{"line":146,"column":20},"end":{"line":146,"column":61}},{"start":{"line":147,"column":20},"end":{"line":147,"column":70}},{"start":{"line":148,"column":20},"end":{"line":148,"column":26}}]},"3":{"line":152,"type":"cond-expr","locations":[{"start":{"line":153,"column":14},"end":{"line":153,"column":20}},{"start":{"line":154,"column":14},"end":{"line":154,"column":20}}]},"4":{"line":156,"type":"binary-expr","locations":[{"start":{"line":156,"column":16},"end":{"line":156,"column":44}},{"start":{"line":156,"column":49},"end":{"line":158,"column":43}}]},"5":{"line":156,"type":"cond-expr","locations":[{"start":{"line":157,"column":14},"end":{"line":157,"column":52}},{"start":{"line":158,"column":14},"end":{"line":158,"column":43}}]},"6":{"line":164,"type":"switch","locations":[{"start":{"line":170,"column":4},"end":{"line":171,"column":14},"skip":true},{"start":{"line":177,"column":4},"end":{"line":258,"column":14},"skip":true}]},"7":{"line":182,"type":"if","locations":[{"start":{"line":182,"column":12},"end":{"line":182,"column":12},"skip":true},{"start":{"line":182,"column":12},"end":{"line":182,"column":12},"skip":true}]},"8":{"line":182,"type":"binary-expr","locations":[{"start":{"line":182,"column":16},"end":{"line":182,"column":27},"skip":true},{"start":{"line":182,"column":31},"end":{"line":182,"column":65},"skip":true}]},"9":{"line":187,"type":"binary-expr","locations":[{"start":{"line":187,"column":27},"end":{"line":187,"column":43},"skip":true},{"start":{"line":187,"column":47},"end":{"line":187,"column":49},"skip":true}]},"10":{"line":195,"type":"binary-expr","locations":[{"start":{"line":195,"column":37},"end":{"line":195,"column":59},"skip":true},{"start":{"line":195,"column":63},"end":{"line":195,"column":65},"skip":true}]},"11":{"line":196,"type":"if","locations":[{"start":{"line":196,"column":12},"end":{"line":196,"column":12},"skip":true},{"start":{"line":196,"column":12},"end":{"line":196,"column":12},"skip":true}]},"12":{"line":208,"type":"switch","locations":[{"start":{"line":209,"column":16},"end":{"line":210,"column":60},"skip":true},{"start":{"line":211,"column":16},"end":{"line":212,"column":46},"skip":true},{"start":{"line":213,"column":16},"end":{"line":214,"column":46},"skip":true},{"start":{"line":215,"column":16},"end":{"line":216,"column":35},"skip":true},{"start":{"line":217,"column":16},"end":{"line":218,"column":34},"skip":true}]},"13":{"line":222,"type":"if","locations":[{"start":{"line":222,"column":8},"end":{"line":222,"column":8},"skip":true},{"start":{"line":222,"column":8},"end":{"line":222,"column":8},"skip":true}]},"14":{"line":222,"type":"binary-expr","locations":[{"start":{"line":222,"column":12},"end":{"line":222,"column":35},"skip":true},{"start":{"line":222,"column":39},"end":{"line":222,"column":67},"skip":true}]},"15":{"line":226,"type":"binary-expr","locations":[{"start":{"line":226,"column":12},"end":{"line":226,"column":50},"skip":true},{"start":{"line":227,"column":12},"end":{"line":227,"column":53},"skip":true}]},"16":{"line":231,"type":"binary-expr","locations":[{"start":{"line":231,"column":12},"end":{"line":231,"column":59},"skip":true},{"start":{"line":232,"column":12},"end":{"line":235,"column":36},"skip":true}]},"17":{"line":237,"type":"binary-expr","locations":[{"start":{"line":237,"column":43},"end":{"line":237,"column":75},"skip":true},{"start":{"line":237,"column":79},"end":{"line":237,"column":81},"skip":true}]},"18":{"line":240,"type":"if","locations":[{"start":{"line":240,"column":8},"end":{"line":240,"column":8},"skip":true},{"start":{"line":240,"column":8},"end":{"line":240,"column":8},"skip":true}]},"19":{"line":244,"type":"if","locations":[{"start":{"line":244,"column":8},"end":{"line":244,"column":8},"skip":true},{"start":{"line":244,"column":8},"end":{"line":244,"column":8},"skip":true}]},"20":{"line":247,"type":"binary-expr","locations":[{"start":{"line":247,"column":27},"end":{"line":247,"column":43},"skip":true},{"start":{"line":247,"column":47},"end":{"line":247,"column":53},"skip":true}]},"21":{"line":251,"type":"if","locations":[{"start":{"line":251,"column":12},"end":{"line":251,"column":12},"skip":true},{"start":{"line":251,"column":12},"end":{"line":251,"column":12},"skip":true}]}},"code":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","/*","example.js","","this script will run a web-demo of swgg-github-misc","","instruction","    1. save this script as example.js","    2. run the shell command:","        $ npm install swgg-github-misc && PORT=8081 node example.js","    3. open a browser to http://127.0.0.1:8081 and play with the web-demo","    4. edit this script to suit your needs","*/","","","","/* istanbul instrument in package swgg_github_misc */","/* jslint-utility2 */","/*jslint","    bitwise: true,","    browser: true,","    maxerr: 4,","    maxlen: 100,","    node: true,","    nomen: true,","    regexp: true,","    stupid: true","*/","(function () {","    'use strict';","    var local;","","","","    // run shared js-env code - init-before","    (function () {","        // init local","        local = {};","        // init modeJs","        local.modeJs = (function () {","            try {","                return typeof navigator.userAgent === 'string' &&","                    typeof document.querySelector('body') === 'object' &&","                    typeof XMLHttpRequest.prototype.open === 'function' &&","                    'browser';","            } catch (errorCaughtBrowser) {","                return module.exports &&","                    typeof process.versions.node === 'string' &&","                    typeof require('http').createServer === 'function' &&","                    'node';","            }","        }());","        // init global","        local.global = local.modeJs === 'browser'","            ? window","            : global;","        // init utility2_rollup","        local = local.global.utility2_rollup || (local.modeJs === 'browser'","            ? local.global.utility2_swgg_github_misc","            : global.utility2_moduleExports);","        // init exports","        local.global.local = local;","        // init assets","        local.assetsDict['/assets.index.template.html'] = local.assetsDict['/assets.swgg.html'];","    }());","    switch (local.modeJs) {","","","","    // run browser js-env code - init-test","    /* istanbul ignore next */","    case 'browser':","        break;","","","","    // run node js-env code - init-test","    /* istanbul ignore next */","    case 'node':","        // init exports","        module.exports = local;","        // require builtins","        Object.keys(process.binding('natives')).forEach(function (key) {","            if (!local[key] && !(/\\/|^_|^assert|^sys$/).test(key)) {","                local[key] = require(key);","            }","        });","        // init assets","        local.assetsDict = local.assetsDict || {};","        [","            'assets.index.css',","            'assets.index.template.html',","            'assets.swgg.swagger.json',","            'assets.swgg.swagger.server.json'","        ].forEach(function (file) {","            file = '/' + file;","            local.assetsDict[file] = local.assetsDict[file] || '';","            if (local.fs.existsSync(local.__dirname + file)) {","                local.assetsDict[file] = local.fs.readFileSync(","                    local.__dirname + file,","                    'utf8'","                );","            }","        });","/* validateLineSortedReset */","        local.assetsDict['/'] =","            local.assetsDict['/assets.example.html'] =","            local.assetsDict['/assets.index.template.html']","            .replace((/\\{\\{env\\.(\\w+?)\\}\\}/g), function (match0, match1) {","                switch (match1) {","                case 'npm_package_description':","                    return 'the greatest app in the world!';","                case 'npm_package_name':","                    return 'swgg-github-misc';","                case 'npm_package_nameLib':","                    return 'swgg_github_misc';","                case 'npm_package_version':","                    return '0.0.1';","                default:","                    return match0;","                }","            });","        // init cli","        if (module !== require.main || local.global.utility2_rollup) {","            break;","        }","        local.assetsDict['/assets.example.js'] =","            local.assetsDict['/assets.example.js'] ||","            local.fs.readFileSync(__filename, 'utf8');","        // bug-workaround - long $npm_package_buildCustomOrg","        /* jslint-ignore-begin */","        local.assetsDict['/assets.swgg_github_misc.js'] =","            local.assetsDict['/assets.swgg_github_misc.js'] ||","            local.fs.readFileSync(","                local.__dirname + '/lib.swgg_github_misc.js',","                'utf8'","            ).replace((/^#!/), '//');","        /* jslint-ignore-end */","        local.assetsDict['/favicon.ico'] = local.assetsDict['/favicon.ico'] || '';","        // if $npm_config_timeout_exit exists,","        // then exit this process after $npm_config_timeout_exit ms","        if (Number(process.env.npm_config_timeout_exit)) {","            setTimeout(process.exit, Number(process.env.npm_config_timeout_exit));","        }","        // start server","        if (local.global.utility2_serverHttp1) {","            break;","        }","        process.env.PORT = process.env.PORT || '8081';","        console.error('server starting on port ' + process.env.PORT);","        local.http.createServer(function (request, response) {","            request.urlParsed = local.url.parse(request.url);","            if (local.assetsDict[request.urlParsed.pathname] !== undefined) {","                response.end(local.assetsDict[request.urlParsed.pathname]);","                return;","            }","            response.statusCode = 404;","            response.end();","        }).listen(process.env.PORT);","        break;","    }","}());"]};
+}
+__cov_eae83be513079 = __cov_eae83be513079['/home/travis/build/kaizhu256/node-swgg-github-misc/example.js'];
+__cov_eae83be513079.s['1']++;(function(){'use strict';__cov_eae83be513079.f['1']++;__cov_eae83be513079.s['2']++;var local;__cov_eae83be513079.s['3']++;(function(){__cov_eae83be513079.f['2']++;__cov_eae83be513079.s['4']++;local={};__cov_eae83be513079.s['5']++;local.modeJs=function(){__cov_eae83be513079.f['3']++;__cov_eae83be513079.s['6']++;try{__cov_eae83be513079.s['7']++;return(__cov_eae83be513079.b['1'][0]++,typeof navigator.userAgent==='string')&&(__cov_eae83be513079.b['1'][1]++,typeof document.querySelector('body')==='object')&&(__cov_eae83be513079.b['1'][2]++,typeof XMLHttpRequest.prototype.open==='function')&&(__cov_eae83be513079.b['1'][3]++,'browser');}catch(errorCaughtBrowser){__cov_eae83be513079.s['8']++;return(__cov_eae83be513079.b['2'][0]++,module.exports)&&(__cov_eae83be513079.b['2'][1]++,typeof process.versions.node==='string')&&(__cov_eae83be513079.b['2'][2]++,typeof require('http').createServer==='function')&&(__cov_eae83be513079.b['2'][3]++,'node');}}();__cov_eae83be513079.s['9']++;local.global=local.modeJs==='browser'?(__cov_eae83be513079.b['3'][0]++,window):(__cov_eae83be513079.b['3'][1]++,global);__cov_eae83be513079.s['10']++;local=(__cov_eae83be513079.b['4'][0]++,local.global.utility2_rollup)||(__cov_eae83be513079.b['4'][1]++,local.modeJs==='browser'?(__cov_eae83be513079.b['5'][0]++,local.global.utility2_swgg_github_misc):(__cov_eae83be513079.b['5'][1]++,global.utility2_moduleExports));__cov_eae83be513079.s['11']++;local.global.local=local;__cov_eae83be513079.s['12']++;local.assetsDict['/assets.index.template.html']=local.assetsDict['/assets.swgg.html'];}());__cov_eae83be513079.s['13']++;switch(local.modeJs){case'browser':__cov_eae83be513079.b['6'][0]++;__cov_eae83be513079.s['14']++;break;case'node':__cov_eae83be513079.b['6'][1]++;__cov_eae83be513079.s['15']++;module.exports=local;__cov_eae83be513079.s['16']++;Object.keys(process.binding('natives')).forEach(function(key){__cov_eae83be513079.f['4']++;__cov_eae83be513079.s['17']++;if((__cov_eae83be513079.b['8'][0]++,!local[key])&&(__cov_eae83be513079.b['8'][1]++,!/\/|^_|^assert|^sys$/.test(key))){__cov_eae83be513079.b['7'][0]++;__cov_eae83be513079.s['18']++;local[key]=require(key);}else{__cov_eae83be513079.b['7'][1]++;}});__cov_eae83be513079.s['19']++;local.assetsDict=(__cov_eae83be513079.b['9'][0]++,local.assetsDict)||(__cov_eae83be513079.b['9'][1]++,{});__cov_eae83be513079.s['20']++;['assets.index.css','assets.index.template.html','assets.swgg.swagger.json','assets.swgg.swagger.server.json'].forEach(function(file){__cov_eae83be513079.f['5']++;__cov_eae83be513079.s['21']++;file='/'+file;__cov_eae83be513079.s['22']++;local.assetsDict[file]=(__cov_eae83be513079.b['10'][0]++,local.assetsDict[file])||(__cov_eae83be513079.b['10'][1]++,'');__cov_eae83be513079.s['23']++;if(local.fs.existsSync(local.__dirname+file)){__cov_eae83be513079.b['11'][0]++;__cov_eae83be513079.s['24']++;local.assetsDict[file]=local.fs.readFileSync(local.__dirname+file,'utf8');}else{__cov_eae83be513079.b['11'][1]++;}});__cov_eae83be513079.s['25']++;local.assetsDict['/']=local.assetsDict['/assets.example.html']=local.assetsDict['/assets.index.template.html'].replace(/\{\{env\.(\w+?)\}\}/g,function(match0,match1){__cov_eae83be513079.f['6']++;__cov_eae83be513079.s['26']++;switch(match1){case'npm_package_description':__cov_eae83be513079.b['12'][0]++;__cov_eae83be513079.s['27']++;return'the greatest app in the world!';case'npm_package_name':__cov_eae83be513079.b['12'][1]++;__cov_eae83be513079.s['28']++;return'swgg-github-misc';case'npm_package_nameLib':__cov_eae83be513079.b['12'][2]++;__cov_eae83be513079.s['29']++;return'swgg_github_misc';case'npm_package_version':__cov_eae83be513079.b['12'][3]++;__cov_eae83be513079.s['30']++;return'0.0.1';default:__cov_eae83be513079.b['12'][4]++;__cov_eae83be513079.s['31']++;return match0;}});__cov_eae83be513079.s['32']++;if((__cov_eae83be513079.b['14'][0]++,module!==require.main)||(__cov_eae83be513079.b['14'][1]++,local.global.utility2_rollup)){__cov_eae83be513079.b['13'][0]++;__cov_eae83be513079.s['33']++;break;}else{__cov_eae83be513079.b['13'][1]++;}__cov_eae83be513079.s['34']++;local.assetsDict['/assets.example.js']=(__cov_eae83be513079.b['15'][0]++,local.assetsDict['/assets.example.js'])||(__cov_eae83be513079.b['15'][1]++,local.fs.readFileSync(__filename,'utf8'));__cov_eae83be513079.s['35']++;local.assetsDict['/assets.swgg_github_misc.js']=(__cov_eae83be513079.b['16'][0]++,local.assetsDict['/assets.swgg_github_misc.js'])||(__cov_eae83be513079.b['16'][1]++,local.fs.readFileSync(local.__dirname+'/lib.swgg_github_misc.js','utf8').replace(/^#!/,'//'));__cov_eae83be513079.s['36']++;local.assetsDict['/favicon.ico']=(__cov_eae83be513079.b['17'][0]++,local.assetsDict['/favicon.ico'])||(__cov_eae83be513079.b['17'][1]++,'');__cov_eae83be513079.s['37']++;if(Number(process.env.npm_config_timeout_exit)){__cov_eae83be513079.b['18'][0]++;__cov_eae83be513079.s['38']++;setTimeout(process.exit,Number(process.env.npm_config_timeout_exit));}else{__cov_eae83be513079.b['18'][1]++;}__cov_eae83be513079.s['39']++;if(local.global.utility2_serverHttp1){__cov_eae83be513079.b['19'][0]++;__cov_eae83be513079.s['40']++;break;}else{__cov_eae83be513079.b['19'][1]++;}__cov_eae83be513079.s['41']++;process.env.PORT=(__cov_eae83be513079.b['20'][0]++,process.env.PORT)||(__cov_eae83be513079.b['20'][1]++,'8081');__cov_eae83be513079.s['42']++;console.error('server starting on port '+process.env.PORT);__cov_eae83be513079.s['43']++;local.http.createServer(function(request,response){__cov_eae83be513079.f['7']++;__cov_eae83be513079.s['44']++;request.urlParsed=local.url.parse(request.url);__cov_eae83be513079.s['45']++;if(local.assetsDict[request.urlParsed.pathname]!==undefined){__cov_eae83be513079.b['21'][0]++;__cov_eae83be513079.s['46']++;response.end(local.assetsDict[request.urlParsed.pathname]);__cov_eae83be513079.s['47']++;return;}else{__cov_eae83be513079.b['21'][1]++;}__cov_eae83be513079.s['48']++;response.statusCode=404;__cov_eae83be513079.s['49']++;response.end();}).listen(process.env.PORT);__cov_eae83be513079.s['50']++;break;}}());
 /* script-end /assets.example.js */
 
 
 
 /* script-begin /assets.test.js */
-/* istanbul instrument in package swgg_github_misc */
-/* jslint-utility2 */
-/*jslint
-    bitwise: true,
-    browser: true,
-    maxerr: 4,
-    maxlen: 100,
-    node: true,
-    nomen: true,
-    regexp: true,
-    stupid: true
-*/
-(function () {
-    'use strict';
-    var local;
-
-
-
-    // run shared js-env code - init-before
-    (function () {
-        // init local
-        local = {};
-        // init modeJs
-        local.modeJs = (function () {
-            try {
-                return typeof navigator.userAgent === 'string' &&
-                    typeof document.querySelector('body') === 'object' &&
-                    typeof XMLHttpRequest.prototype.open === 'function' &&
-                    'browser';
-            } catch (errorCaughtBrowser) {
-                return module.exports &&
-                    typeof process.versions.node === 'string' &&
-                    typeof require('http').createServer === 'function' &&
-                    'node';
-            }
-        }());
-        // init global
-        local.global = local.modeJs === 'browser'
-            ? window
-            : global;
-        // re-init local
-        local = local.global.local = (local.global.utility2 ||
-            require('./assets.utility2.rollup.js')).requireReadme();
-        // init test
-        local.testRunInit(local);
-    }());
-}());
+var __cov_4aabbf80285d7 = (Function('return this'))();
+if (!__cov_4aabbf80285d7.__coverage__) { __cov_4aabbf80285d7.__coverage__ = {}; }
+__cov_4aabbf80285d7 = __cov_4aabbf80285d7.__coverage__;
+if (!(__cov_4aabbf80285d7['/home/travis/build/kaizhu256/node-swgg-github-misc/test.js'])) {
+   __cov_4aabbf80285d7['/home/travis/build/kaizhu256/node-swgg-github-misc/test.js'] = {"path":"/home/travis/build/kaizhu256/node-swgg-github-misc/test.js","s":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0},"b":{"1":[0,0,0,0],"2":[0,0,0,0],"3":[0,0],"4":[0,0]},"f":{"1":0,"2":0,"3":0},"fnMap":{"1":{"name":"(anonymous_1)","line":13,"loc":{"start":{"line":13,"column":1},"end":{"line":13,"column":13}}},"2":{"name":"(anonymous_2)","line":20,"loc":{"start":{"line":20,"column":5},"end":{"line":20,"column":17}}},"3":{"name":"(anonymous_3)","line":24,"loc":{"start":{"line":24,"column":24},"end":{"line":24,"column":36}}}},"statementMap":{"1":{"start":{"line":13,"column":0},"end":{"line":47,"column":5}},"2":{"start":{"line":15,"column":4},"end":{"line":15,"column":14}},"3":{"start":{"line":20,"column":4},"end":{"line":46,"column":9}},"4":{"start":{"line":22,"column":8},"end":{"line":22,"column":19}},"5":{"start":{"line":24,"column":8},"end":{"line":36,"column":13}},"6":{"start":{"line":25,"column":12},"end":{"line":35,"column":13}},"7":{"start":{"line":26,"column":16},"end":{"line":29,"column":30}},"8":{"start":{"line":31,"column":16},"end":{"line":34,"column":27}},"9":{"start":{"line":38,"column":8},"end":{"line":40,"column":21}},"10":{"start":{"line":42,"column":8},"end":{"line":43,"column":68}},"11":{"start":{"line":45,"column":8},"end":{"line":45,"column":33}}},"branchMap":{"1":{"line":26,"type":"binary-expr","locations":[{"start":{"line":26,"column":23},"end":{"line":26,"column":62}},{"start":{"line":27,"column":20},"end":{"line":27,"column":70}},{"start":{"line":28,"column":20},"end":{"line":28,"column":71}},{"start":{"line":29,"column":20},"end":{"line":29,"column":29}}]},"2":{"line":31,"type":"binary-expr","locations":[{"start":{"line":31,"column":23},"end":{"line":31,"column":37}},{"start":{"line":32,"column":20},"end":{"line":32,"column":61}},{"start":{"line":33,"column":20},"end":{"line":33,"column":70}},{"start":{"line":34,"column":20},"end":{"line":34,"column":26}}]},"3":{"line":38,"type":"cond-expr","locations":[{"start":{"line":39,"column":14},"end":{"line":39,"column":20}},{"start":{"line":40,"column":14},"end":{"line":40,"column":20}}]},"4":{"line":42,"type":"binary-expr","locations":[{"start":{"line":42,"column":38},"end":{"line":42,"column":59}},{"start":{"line":43,"column":12},"end":{"line":43,"column":50}}]}},"code":["/* istanbul instrument in package swgg_github_misc */","/* jslint-utility2 */","/*jslint","    bitwise: true,","    browser: true,","    maxerr: 4,","    maxlen: 100,","    node: true,","    nomen: true,","    regexp: true,","    stupid: true","*/","(function () {","    'use strict';","    var local;","","","","    // run shared js-env code - init-before","    (function () {","        // init local","        local = {};","        // init modeJs","        local.modeJs = (function () {","            try {","                return typeof navigator.userAgent === 'string' &&","                    typeof document.querySelector('body') === 'object' &&","                    typeof XMLHttpRequest.prototype.open === 'function' &&","                    'browser';","            } catch (errorCaughtBrowser) {","                return module.exports &&","                    typeof process.versions.node === 'string' &&","                    typeof require('http').createServer === 'function' &&","                    'node';","            }","        }());","        // init global","        local.global = local.modeJs === 'browser'","            ? window","            : global;","        // re-init local","        local = local.global.local = (local.global.utility2 ||","            require('./assets.utility2.rollup.js')).requireReadme();","        // init test","        local.testRunInit(local);","    }());","}());",""]};
+}
+__cov_4aabbf80285d7 = __cov_4aabbf80285d7['/home/travis/build/kaizhu256/node-swgg-github-misc/test.js'];
+__cov_4aabbf80285d7.s['1']++;(function(){'use strict';__cov_4aabbf80285d7.f['1']++;__cov_4aabbf80285d7.s['2']++;var local;__cov_4aabbf80285d7.s['3']++;(function(){__cov_4aabbf80285d7.f['2']++;__cov_4aabbf80285d7.s['4']++;local={};__cov_4aabbf80285d7.s['5']++;local.modeJs=function(){__cov_4aabbf80285d7.f['3']++;__cov_4aabbf80285d7.s['6']++;try{__cov_4aabbf80285d7.s['7']++;return(__cov_4aabbf80285d7.b['1'][0]++,typeof navigator.userAgent==='string')&&(__cov_4aabbf80285d7.b['1'][1]++,typeof document.querySelector('body')==='object')&&(__cov_4aabbf80285d7.b['1'][2]++,typeof XMLHttpRequest.prototype.open==='function')&&(__cov_4aabbf80285d7.b['1'][3]++,'browser');}catch(errorCaughtBrowser){__cov_4aabbf80285d7.s['8']++;return(__cov_4aabbf80285d7.b['2'][0]++,module.exports)&&(__cov_4aabbf80285d7.b['2'][1]++,typeof process.versions.node==='string')&&(__cov_4aabbf80285d7.b['2'][2]++,typeof require('http').createServer==='function')&&(__cov_4aabbf80285d7.b['2'][3]++,'node');}}();__cov_4aabbf80285d7.s['9']++;local.global=local.modeJs==='browser'?(__cov_4aabbf80285d7.b['3'][0]++,window):(__cov_4aabbf80285d7.b['3'][1]++,global);__cov_4aabbf80285d7.s['10']++;local=local.global.local=((__cov_4aabbf80285d7.b['4'][0]++,local.global.utility2)||(__cov_4aabbf80285d7.b['4'][1]++,require('./assets.utility2.rollup.js'))).requireReadme();__cov_4aabbf80285d7.s['11']++;local.testRunInit(local);}());}());
 /* script-end /assets.test.js */
 
 
