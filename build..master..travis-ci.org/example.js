@@ -1,102 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 example.js
 
@@ -155,7 +56,7 @@ instruction
         // init utility2_rollup
         local = local.global.utility2_rollup || (local.modeJs === 'browser'
             ? local.global.utility2_swgg_github_misc
-            : global.utility2_moduleExports);
+            : require('swgg-github-misc'));
         // init exports
         local.global.local = local;
         // init assets
