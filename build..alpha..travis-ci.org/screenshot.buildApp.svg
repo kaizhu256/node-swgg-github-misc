@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-04-22T07:53:33.164Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-04-22T08:09:09.111Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
 <tspan x="10" y="58">-swgg-github-misc</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -15,9 +15,9 @@
 
 <tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
 
-<tspan x="10" y="154">&gt; server listening on http-port 51708</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 51613</tspan>
 
-<tspan x="10" y="170">&gt; server listening on http-port 37221</tspan>
+<tspan x="10" y="170">&gt; server listening on http-port 61690</tspan>
 
 <tspan x="10" y="186">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
@@ -30,37 +30,37 @@
 
 <tspan x="10" y="266">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="282">| test-report - buildApidoc - node - linux v6.14.1 - 2018-04-22T07:52:36.771Z</tspan>
+<tspan x="10" y="282">| test-report - buildApidoc - node - linux v6.14.1 - 2018-04-22T08:08:14.145Z</tspan>
 
-<tspan x="10" y="298">|   62926 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="298">|   61322 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="314">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="330">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
 <tspan x="10" y="346">ebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2018-04-22\</tspan>
-<tspan x="10" y="362">T07:52:18.577Z</tspan>
+<tspan x="10" y="362">T08:07:56.408Z</tspan>
 
 <tspan x="10" y="378">|      17 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="394">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="410">| test-report - npmTest - node - linux v6.14.1 - 2018-04-22T07:52:15.485Z</tspan>
+<tspan x="10" y="410">| test-report - npmTest - node - linux v6.14.1 - 2018-04-22T08:07:54.113Z</tspan>
 
-<tspan x="10" y="426">|   17476 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="426">|   16784 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="442">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="458">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
 <tspan x="10" y="474">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2\</tspan>
-<tspan x="10" y="490">018-04-22T07:51:06.582Z</tspan>
+<tspan x="10" y="490">018-04-22T08:06:38.255Z</tspan>
 
-<tspan x="10" y="506">|      31 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="506">|      16 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="522">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="538">| test-report - npmTestPublished - node - linux v6.14.1 - 2018-04-22T07:51:03.279Z</tspan>
+<tspan x="10" y="538">| test-report - npmTestPublished - node - linux v6.14.1 - 2018-04-22T08:06:35.455Z</tspan>
 
-<tspan x="10" y="554">|   17787 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="554">|   17288 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="570">-------------------------------------------------------</tspan>
 
@@ -79,7 +79,7 @@
 
 <tspan x="10" y="698"></tspan>
 
-<tspan x="10" y="714">[MODE_BUILD=buildApp] - 2018-04-22T07:53:41.433Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="714">[MODE_BUILD=buildApp] - 2018-04-22T08:09:17.077Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
