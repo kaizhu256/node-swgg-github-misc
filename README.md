@@ -59,7 +59,7 @@ this zero-dependency package will provide a (nodejs-compatible) swagger-client f
 
 #### changelog for v2018.4.23
 - npm publish v2018.4.23
-- initial package
+- update build
 - none
 
 #### this package requires
