@@ -3,7 +3,7 @@
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-04-22T00:41:10.077Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApidoc] - 2018-04-22T06:44:46.616Z - npm-testing /home/travis/build/kaizhu256/n\</tspan>
 <tspan x="10" y="58">ode-swgg-github-misc</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -15,7 +15,7 @@
 
 <tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
 
-<tspan x="10" y="154">&gt; server listening on http-port 43984</tspan>
+<tspan x="10" y="154">&gt; server listening on http-port 33175</tspan>
 
 <tspan x="10" y="170">apidocCreate - readExample /home/travis/build/kaizhu256/node-swgg-github-misc/package.json</tspan>
 
@@ -49,10 +49,10 @@
 
 <tspan x="10" y="426">[node test-case 1 of 1 passed] - testCase_buildApidoc_default</tspan>
 
-<tspan x="10" y="442">(node:7242) DeprecationWarning: _linklist module is deprecated. Please use a userland alternativ\</tspan>
+<tspan x="10" y="442">(node:7319) DeprecationWarning: _linklist module is deprecated. Please use a userland alternativ\</tspan>
 <tspan x="10" y="458">e.</tspan>
 
-<tspan x="10" y="474">(node:7242) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+<tspan x="10" y="474">(node:7319) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
 
 <tspan x="10" y="490"></tspan>
 
@@ -63,37 +63,37 @@
 
 <tspan x="10" y="554">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="570">| test-report - buildApidoc - node - linux v6.14.1 - 2018-04-22T00:41:10.327Z</tspan>
+<tspan x="10" y="570">| test-report - buildApidoc - node - linux v6.14.1 - 2018-04-22T06:44:46.884Z</tspan>
 
-<tspan x="10" y="586">|     210 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="586">|     188 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="602">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="618">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
 <tspan x="10" y="634">ebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2018-04-22\</tspan>
-<tspan x="10" y="650">T00:40:52.643Z</tspan>
+<tspan x="10" y="650">T06:44:29.209Z</tspan>
 
-<tspan x="10" y="666">|      21 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="666">|      13 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="682">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="698">| test-report - npmTest - node - linux v6.14.1 - 2018-04-22T00:40:50.484Z</tspan>
+<tspan x="10" y="698">| test-report - npmTest - node - linux v6.14.1 - 2018-04-22T06:44:27.109Z</tspan>
 
-<tspan x="10" y="714">|   16639 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="714">|   16606 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="730">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="746">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
 <tspan x="10" y="762">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2\</tspan>
-<tspan x="10" y="778">018-04-22T00:39:44.193Z</tspan>
+<tspan x="10" y="778">018-04-22T06:43:13.796Z</tspan>
 
-<tspan x="10" y="794">|      28 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="794">|      19 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="810">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="826">| test-report - npmTestPublished - node - linux v6.14.1 - 2018-04-22T00:39:41.637Z</tspan>
+<tspan x="10" y="826">| test-report - npmTestPublished - node - linux v6.14.1 - 2018-04-22T06:43:11.108Z</tspan>
 
-<tspan x="10" y="842">|   17149 ms            0 failed        8 passed      |</tspan>
+<tspan x="10" y="842">|   17238 ms            0 failed        8 passed      |</tspan>
 
 <tspan x="10" y="858">-------------------------------------------------------</tspan>
 
@@ -112,7 +112,7 @@
 
 <tspan x="10" y="986"></tspan>
 
-<tspan x="10" y="1002">[MODE_BUILD=buildApidoc] - 2018-04-22T00:41:12.106Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="1002">[MODE_BUILD=buildApidoc] - 2018-04-22T06:44:48.641Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
