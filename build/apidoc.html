@@ -52,7 +52,7 @@
 
         href="https://github.com/kaizhu256/node-swgg-github-misc"
 
-    >swgg-github-misc (v2018.3.29)</a>
+    >swgg-github-misc (v2018.4.22)</a>
 </h1>
 <h4>this zero-dependency package will provide a (nodejs-compatible) swagger-client for github-misc's web-apis, with a working web-demo</h4>
 <div class="apidocSectionDiv"><a
@@ -104,8 +104,8 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fgitignore_2Ftemplates_2FC_20GET.ajax">
-            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fgitignore_2Ftemplates_2FC_20GET.ajax
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET.ajax
             <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
             </a>
 
@@ -335,22 +335,23 @@
 
 
     <h2>
-        <a href="#apidoc.element.swgg.apiDict.operationId._2Fgitignore_2Ftemplates_2FC_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fgitignore_2Ftemplates_2FC_20GET.ajax">
-        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fgitignore_2Ftemplates_2FC_20GET.ajax
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET.ajax
         <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">operationId._2Fgitignore_2Ftemplates_2FC_20GET.ajax = function (swaggerJson, onError) {
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET.ajax = function (swaggerJson, onError) {
 <span class="apidocCodeCommentSpan">/*
- * this function will run the api-call &quot;GET /gitignore/templates/C&quot;
+ * this function will run the api-call &quot;GET /gitignore/templates/{}&quot;
  * example usage:
-    swgg.apiDict[&quot;operationId._2Fgitignore_2Ftemplates_2FC_20GET&quot;].ajax({
+    swgg.apiDict[&quot;operationId._2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET&quot;].ajax({
         &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
         &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
         &quot;accept&quot;: [
             &quot;application/vnd.github.v3+json&quot;
-        ]
+        ],
+        &quot;name&quot;: &quot;name&quot;
     }, function (error, data) {
         if (error) {
             console.error(error);
