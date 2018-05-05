@@ -1,32 +1,4 @@
-<html lang="en" data-scrape="{
-    &quot;hrefDict&quot;: {
-        &quot;https://github.com/kaizhu256/node-swgg&quot;: &quot;swgg&quot;,
-        &quot;https://github.com/kaizhu256/node-swgg-github-misc&quot;: &quot;swgg-github-misc (2018.4.23)&quot;,
-        &quot;https://developer.github.com/v3/misc/&quot;: &quot;Miscellaneous&quot;,
-        &quot;https://developer.github.com/v3/codes_of_conduct/&quot;: &quot;Codes of Conduct&quot;,
-        &quot;https://developer.github.com/v3/emojis/&quot;: &quot;Emojis&quot;,
-        &quot;https://developer.github.com/v3/gitignore/&quot;: &quot;Gitignore&quot;,
-        &quot;https://help.github.com/articles/ignoring-files&quot;: &quot;.gitignore template&quot;,
-        &quot;https://github.com/github/gitignore&quot;: &quot;GitHub .gitignore repository&quot;,
-        &quot;https://developer.github.com/v3/licenses/&quot;: &quot;Licenses&quot;,
-        &quot;https://github.com/benbalter/licensee&quot;: &quot;the open source Ruby Gem Licensee&quot;,
-        &quot;https://spdx.org/&quot;: &quot;SPDX specification&quot;,
-        &quot;https://developer.github.com/v3/repos/&quot;: &quot;Get a repository&quot;,
-        &quot;https://developer.github.com/v3/repos/forks/&quot;: &quot;List forks&quot;,
-        &quot;https://developer.github.com/v3/activity/watching/&quot;: &quot;List repositories being watched&quot;,
-        &quot;https://developer.github.com/v3/teams/&quot;: &quot;List team repos&quot;,
-        &quot;https://developer.github.com/v3/markdown/&quot;: &quot;Markdown&quot;,
-        &quot;https://developer.github.com/v3/meta/&quot;: &quot;Meta&quot;,
-        &quot;https://developer.github.com/v3/rate_limit/&quot;: &quot;Rate Limit&quot;,
-        &quot;https://developer.github.com/v3/&quot;: &quot;rate limit rules&quot;,
-        &quot;https://developer.github.com/v3/index.html&quot;: &quot;https://developer.github.com/v3/index.html#user-agent-required&quot;,
-        &quot;https://developer.github.com/v3/media/&quot;: &quot;https://developer.github.com/v3/media/&quot;,
-        &quot;https://github.com/github/github-services&quot;: &quot;github-services&quot;
-    },
-    &quot;href&quot;: &quot;https://kaizhu256.github.io/node-swgg-github-misc/build..beta..travis-ci.org/app/#!swgg_id__2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_20GET_1&quot;,
-    &quot;url&quot;: &quot;https://kaizhu256.github.io/node-swgg-github-misc/build..beta..travis-ci.org/app/&quot;,
-    &quot;bodyTextContent&quot;: &quot;nodejs initialization\n/*\n * initialize nodejs swgg-client\n * 1. download currently-loaded apis to file swagger.json:\n *     $ curl -L -o swagger.json \&quot;https://kaizhu256.github.io/node-swgg-github-misc/build..beta..travis-ci.org/app/assets.swgg.swagger.json\&quot;\n * 2. npm install swgg\n *     $ npm install swgg\n * 3. run code below to initialize nodejs swgg-client\n * 4. (optional) edit file swagger.json to suit your needs\n */\nvar swgg;\nswgg = require(\&quot;swgg\&quot;);\nswgg.apiUpdate(require(\&quot;./swagger.json\&quot;));\nconsole.log(\&quot;printing currently loaded apis ...\&quot;);\nObject.keys(swgg.apiDict).sort().forEach(function (key) {\n    console.log(\&quot;swgg.apiDict[\&quot; + JSON.stringify(key) + \&quot;].ajax\&quot;);\n});\nconsole.log(\&quot;initialized nodejs swgg-client\&quot;);\n\n            The Licenses API uses [the open source Ruby Gem Licensee]() to attempt to identify the project's license. Licensee matches the contents of a project's ```LICENSE``` file (if it exists) against a short list of known licenses. As a result, the API does not take into account the licenses of project dependencies or other means of documenting a project's license such as references to the license name in the documentation.\n\nGitHub is a lot of things, but it’s not a law firm. As such, GitHub does not provide legal advice. Using the Licenses API or sending us an email about it does not constitute legal advice nor does it create an attorney-client relationship. If you have any questions about what you can and can't do with a particular license, you should consult with your own legal counsel before moving forward. In fact, you should always consult with your own lawyer before making any decisions that might have legal ramifications or that may impact your legal rights.\n\nGitHub created the License API to help users get information about open source licenses and the projects that use them. We hope it helps, but please keep in mind that we’re not lawyers (at least not most of us aren't) and that we make mistakes like everyone else. For that reason, GitHub provides the API on an “as-is” basis and makes no warranties regarding any information or licenses provided on or through it, and disclaims liability for damages resulting from using the API.\n\n        Miscellaneous\nThis is a miscellaneous set of APIs which provide access to top level GitHub resources and info.\nCodes of Conduct\nThe Codes of Conduct API is currently available for developers to preview.   During the preview period, the API may change without advance notice.\nTo access the API during the preview period, you must provide a custom media type in the Accept header:\napplication/vnd.github.scarlet-witch-preview+json\nEmojis\nLists all the emojis available to use on GitHub.\nGitignore\nWhen you create a new GitHub repository via the API, you can specify a .gitignore template to apply to the repository upon creation. The .gitignore Templates API lists and fetches templates from the GitHub .gitignore repository.\nLicenses\nThe Licenses API returns metadata about popular open source licenses and information about a particular project's license file.\nThe Licenses API uses the open source Ruby Gem Licensee to attempt to identify the project's license. Licensee matches the contents of a project's LICENSE file (if it exists) against a short list of known licenses. As a result, the API does not take into account the licenses of project dependencies or other means of documenting a project's license such as references to the license name in the documentation.\nIf a license is matched, the license key and name returned conforms to the SPDX specification.\nNote: These endpoints will also return a repository's license information:\n\nGitHub is a lot of things, but it’s not a law firm. As such, GitHub does not provide legal advice. Using the Licenses API or sending us an email about it does not constitute legal advice nor does it create an attorney-client relationship. If you have any questions about what you can and can't do with a particular license, you should consult with your own legal counsel before moving forward. In fact, you should always consult with your own lawyer before making any decisions that might have legal ramifications or that may impact your legal rights.\nGitHub created the License API to help users get information about open source licenses and the projects that use them. We hope it helps, but please keep in mind that we’re not lawyers (at least not most of us aren't) and that we make mistakes like everyone else. For that reason, GitHub provides the API on an “as-is” basis and makes no warranties regarding any information or licenses provided on or through it, and disclaims liability for damages resulting from using the API.\nMarkdown\nno description\nMeta\nThis endpoint provides information about GitHub.com, the service.\nRate Limit\nThe overview documentation describes the rate limit rules. You can check your current rate limit status at any time using the Rate Limit API described below.\n\n                                                        https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                        try it out!\n    nodejs request\n    /*\n * reproduce api-call \&quot;GET /repos/{}/{}\&quot;\n * 1. initialize nodejs swgg-client from previous step\n * 2. run code below to reproduce api-call\n */\nswgg.apiDict[\&quot;GET /repos/{}/{}\&quot;].ajax({\n    \&quot;paramDict\&quot;: {\n        \&quot;user-agent\&quot;: \&quot;Awesome-Octocat-App\&quot;,\n        \&quot;accept\&quot;: [\n            \&quot;application/vnd.github.scarlet-witch-preview+json\&quot;\n        ],\n        \&quot;owner\&quot;: \&quot;owner\&quot;,\n        \&quot;repo\&quot;: \&quot;repo\&quot;\n    }\n}, function (error, data) {\n    if (error) {\n        console.error(error);\n        return;\n    }\n    console.log(data.responseJson || data.responseText);\n});\n\n    curl request\n    curl \\\n--request GET \\\n--header 'user-agent: Awesome-Octocat-App' \\\n--header 'accept: application/vnd.github.scarlet-witch-preview+json' \\\n--header 'Content-Type: application/json' \\\n--data-binary '' \\\n\&quot;https://api.github.com/repos/owner/repo\&quot;\n    response status code\n\n                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                        https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                        https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                        https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                    {\n    \&quot;context\&quot;: {\n        \&quot;default\&quot;: \&quot;github/gollum\&quot;,\n        \&quot;description\&quot;: \&quot;The repository context to use when creating references in ```gfm``` mode. Omit this parameter when using ```markdown``` mode.\&quot;,\n        \&quot;type\&quot;: \&quot;string\&quot;,\n        \&quot;x-swgg-descriptionLineList\&quot;: [\n            \&quot;The repository context to use when creating references in ```gfm``` mode. Omit this parameter when using ```markdown``` mode.\&quot;\n        ]\n    },\n    \&quot;mode\&quot;: {\n        \&quot;default\&quot;: \&quot;markdown\&quot;,\n        \&quot;description\&quot;: \&quot;The rendering mode. Can be either:\\n* ```markdown``` to render a document in plain Markdown, just like README.md files are rendered.\\n* ```gfm``` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.\\nDefault: ```markdown```\&quot;,\n        \&quot;type\&quot;: \&quot;string\&quot;,\n        \&quot;x-swgg-descriptionLineList\&quot;: [\n            \&quot;The rendering mode. Can be either:\&quot;,\n            \&quot;* ```markdown``` to render a document in plain Markdown, just like README.md files are rendered.\&quot;,\n            \&quot;* ```gfm``` to render a document in [GitHub Flavored Markdown](https://github.github.com/gfm/), which creates links for user mentions as well as references to SHA-1 hashes, issues, and pull requests.\&quot;,\n            \&quot;Default: ```markdown```\&quot;\n        ]\n    },\n    \&quot;text\&quot;: {\n        \&quot;default\&quot;: \&quot;Hello world github/linguist#1 **cool**, and #1!\&quot;,\n        \&quot;description\&quot;: \&quot;**Required**. The Markdown text to render in HTML. Markdown content must be 400 KB or less.\&quot;,\n        \&quot;type\&quot;: \&quot;string\&quot;,\n        \&quot;x-swgg-descriptionLineList\&quot;: [\n            \&quot;**Required**. The Markdown text to render in HTML. Markdown content must be 400 KB or less.\&quot;\n        ]\n    }\n}\n\n                                                                                                https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.\n\n                                                                                                                                                        https://developer.github.com/v3/index.html#user-agent-required\nAll API requests MUST include a valid User-Agent header. Requests with no User-Agent header will be rejected. We request that you use your GitHub username, or the name of your application, for the User-Agent header value. This allows us to contact you if there are problems.\n\n        https://developer.github.com/v3/media/\nCustom media types are used in the API to let consumers choose the format of the data they wish to receive. This is done by adding one or more of the following types to the Accept header when you make a request. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.&quot;
-}"><head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- "" -->
@@ -63,6 +35,11 @@
 }
 a {
     overflow-wrap: break-word;
+}
+body {
+    background: #eef;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 40px;
 }
 body > div,
 body > pre,
@@ -489,15 +466,92 @@ textarea {
 }
 </style>
 </head>
-<body style="background: #eef; font-family: Arial, Helvetica, sans-serif; margin: 0 40px;">
+<body>
 <div id="ajaxProgressDiv1" style="background: transparent; height: 2px; left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; transition: background 500ms, width 1500ms; width: 0%; z-index: 1;"></div>
 <div class="uiAnimateSpin" style="animation: uiAnimateSpin 2s linear infinite; border: 5px solid #999; border-radius: 50%; border-top: 5px solid #7d7; display: none; height: 25px; vertical-align: middle; width: 25px;"></div>
-<code style="display: none;"></code><div class="button uiAnimateShake uiAnimateSlide utility2FooterDiv zeroPixel" style="display: none;"></div><pre style="display: none;"></pre><textarea readonly="" style="display: none;"></textarea>
-<script></script>
+<code style="display: none;"></code><div class="button colorError uiAnimateShake uiAnimateSlide utility2FooterDiv zeroPixel" style="display: none;"></div><pre style="display: none;"></pre><textarea readonly="" style="display: none;"></textarea>
+<script>
+/* jslint-utility2 */
+/*jslint
+    bitwise: true,
+    browser: true,
+    maxerr: 4,
+    maxlen: 100,
+    node: true,
+    nomen: true,
+    regexp: true,
+    stupid: true
+*/
+// init timerIntervalAjaxProgressUpdate
+(function () {
+/*
+ * this function will increment the ajax-progress-bar until the webpage has loaded
+ */
+    "use strict";
+    var ajaxProgressDiv1,
+        ajaxProgressState,
+        ajaxProgressUpdate;
+    if (window.timerIntervalAjaxProgressUpdate) {
+        return;
+    }
+    ajaxProgressDiv1 = document.querySelector("#ajaxProgressDiv1");
+    setTimeout(function () {
+        ajaxProgressDiv1.style.width = "25%";
+    });
+    ajaxProgressState = 0;
+    ajaxProgressUpdate = (window.local &&
+        window.local.ajaxProgressUpdate) || function () {
+        ajaxProgressDiv1.style.width = "100%";
+        setTimeout(function () {
+            ajaxProgressDiv1.style.background = "transparent";
+            setTimeout(function () {
+                ajaxProgressDiv1.style.width = "0%";
+            }, 500);
+        }, 1500);
+    };
+    window.timerIntervalAjaxProgressUpdate = setInterval(function () {
+        ajaxProgressState += 1;
+        ajaxProgressDiv1.style.width = Math.max(
+            100 - 75 * Math.exp(-0.125 * ajaxProgressState),
+            ajaxProgressDiv1.style.width.slice(0, -1) | 0
+        ) + "%";
+    }, 1000);
+    window.addEventListener("load", function () {
+        clearInterval(window.timerIntervalAjaxProgressUpdate);
+        ajaxProgressUpdate();
+    });
+}());
+// init domOnEventSelectAllWithinPre
+(function () {
+/*
+ * this function will limit select-all within <pre tabIndex="0"> elements
+ * https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+ */
+    "use strict";
+    if (window.domOnEventSelectAllWithinPre) {
+        return;
+    }
+    window.domOnEventSelectAllWithinPre = function (event) {
+        var range, selection;
+        if (event &&
+                event.code === "KeyA" &&
+                (event.ctrlKey || event.metaKey) &&
+                event.target.closest("pre")) {
+            range = document.createRange();
+            range.selectNodeContents(event.target.closest("pre"));
+            selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            event.preventDefault();
+        }
+    };
+    document.addEventListener("keydown", window.domOnEventSelectAllWithinPre);
+}());
+</script>
 <div class="swggUiContainer" style="margin: 0 auto; max-width: 1200px;"><!-- <div class="swggUiContainer"> -->
 <h2 class="eventDelegateKeyup eventDelegateSubmit hx onEventUiReload thead">
     <a class="td td1" href="https://github.com/kaizhu256/node-swgg" target="_blank">swgg</a>
-    <input class="td td2" placeholder="http://petstore.swagger.io/v2/swagger.json" type="text" value="https://kaizhu256.github.io/node-swgg-github-misc/build..beta..travis-ci.org/app/assets.swgg.swagger.json">
+    <input class="td td2" placeholder="http://petstore.swagger.io/v2/swagger.json" type="text" value="https://kaizhu256.github.io/node-swgg-github-misc/build..alpha..travis-ci.org/app/assets.swgg.swagger.json">
     <input class="td td3" id="swggApiKeyInput1" placeholder="api-key" type="text" value="">
     <button class="button eventDelegateClick onEventUiReload td td4">explore</button>
     <button class="button eventDelegateClick onEventUiReload td td5" id="swggApiKeyClearButton1">
@@ -534,10 +588,10 @@ textarea {
 </div>
 
 <h4 class="label">nodejs initialization</h4>
-<pre id="swggAjaxProgressPre1">/*
+<pre id="swggAjaxProgressPre1" tabindex="0">/*
  * initialize nodejs swgg-client
  * 1. download currently-loaded apis to file swagger.json:
- *     $ curl -L -o swagger.json "https://kaizhu256.github.io/node-swgg-github-misc/build..beta..travis-ci.org/app/assets.swgg.swagger.json"
+ *     $ curl -L -o swagger.json "https://kaizhu256.github.io/node-swgg-github-misc/build..alpha..travis-ci.org/app/assets.swgg.swagger.json"
  * 2. npm install swgg
  *     $ npm install swgg
  * 3. run code below to initialize nodejs swgg-client
@@ -654,7 +708,7 @@ The overview documentation describes the [rate limit rules](). You can check you
 <p>The overview documentation describes the <a href="https://developer.github.com/v3/#rate-limiting">rate limit rules</a>. You can check your current rate limit status at any time using the Rate Limit API described below.</p>
 </div>
 <div class="operation" data-_method-path="GET /repos/{}/{}" id="swgg_id__2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">1.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -835,7 +889,7 @@ When passed the preview media type, requests to get a repository will also retur
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript">/*
+    <pre class="requestJavascript" tabindex="0">/*
  * reproduce api-call "GET /repos/{}/{}"
  * 1. initialize nodejs swgg-client from previous step
  * 2. run code below to reproduce api-call
@@ -858,7 +912,7 @@ swgg.apiDict["GET /repos/{}/{}"].ajax({
 });
 </pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl">curl \
+    <pre class="requestCurl" tabindex="0">curl \
 --request GET \
 --header 'user-agent: Awesome-Octocat-App' \
 --header 'accept: application/vnd.github.scarlet-witch-preview+json' \
@@ -868,14 +922,14 @@ swgg.apiDict["GET /repos/{}/{}"].ajax({
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /codes_of_conduct/{}" id="swgg_id__2Fcodes_of_conduct_2F_7Bkey_7D_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">2.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1027,20 +1081,20 @@ swgg.apiDict["GET /repos/{}/{}"].ajax({
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /repos/{}/{}/community/code_of_conduct" id="swgg_id__2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fcommunity_2Fcode_of_conduct_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">3.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1221,20 +1275,20 @@ This method returns the contents of the repository's code of conduct file, if on
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /codes_of_conduct" id="swgg_id__2Fcodes_of_conduct_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">4.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1360,20 +1414,20 @@ This method returns the contents of the repository's code of conduct file, if on
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /emojis" id="swgg_id__2Femojis_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">5.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1502,20 +1556,20 @@ Lists all the emojis available to use on GitHub.</span>
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /gitignore/templates/{}" id="swgg_id__2Fgitignore_2Ftemplates_2F_7Bname_7D_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">6.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1670,20 +1724,20 @@ The API also allows fetching the source of a single template.</span>
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /gitignore/templates" id="swgg_id__2Fgitignore_2Ftemplates_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">7.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1812,20 +1866,20 @@ List all templates available to pass as an option when [creating a repository]()
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /licenses/{}" id="swgg_id__2Flicenses_2F_7Blicense_7D_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">8.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -1977,20 +2031,20 @@ List all templates available to pass as an option when [creating a repository]()
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /repos/{}/{}/license" id="swgg_id__2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flicense_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">9.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -2171,20 +2225,20 @@ This method returns the contents of the repository's license file, if one is det
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /licenses" id="swgg_id__2Flicenses_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">10.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -2310,20 +2364,20 @@ This method returns the contents of the repository's license file, if one is det
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="POST /markdown/raw" id="swgg_id__2Fmarkdown_2Fraw_20POST_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">11.</span>
     <span class="methodPOST td td2">POST</span>
     <span class="td td3">
@@ -2449,20 +2503,20 @@ This method returns the contents of the repository's license file, if one is det
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="POST /markdown" id="swgg_id__2Fmarkdown_20POST_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">12.</span>
     <span class="methodPOST td td2">POST</span>
     <span class="td td3">
@@ -2601,7 +2655,7 @@ This method returns the contents of the repository's license file, if one is det
     <div class="colorError"></div>
 </span>
 <span class="td td4">
-    <pre>{
+    <pre tabindex="0">{
     "context": {
         "default": "github/gollum",
         "description": "The repository context to use when creating references in ```gfm``` mode. Omit this parameter when using ```markdown``` mode.",
@@ -2649,20 +2703,20 @@ This method returns the contents of the repository's license file, if one is det
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /meta" id="swgg_id__2Fmeta_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">13.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -2851,20 +2905,20 @@ This endpoint provides information about GitHub.com, the service.</span>
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
 <div class="operation" data-_method-path="GET /rate_limit" id="swgg_id__2Frate_limit_20GET_1">
-<div class="onEventInputValidate onEventOperationDisplayShow thead" tabindex="0">
+<div class="onEventInputValidateAndAjax onEventOperationDisplayShow thead" tabindex="0">
     <span class="td td1">14.</span>
     <span class="methodGET td td2">GET</span>
     <span class="td td3">
@@ -2993,15 +3047,15 @@ Note: Accessing this endpoint does not count against your rate limit.</span>
     
     <button class="button onEventOperationAjax">try it out!</button>
     <h4 class="label">nodejs request</h4>
-    <pre class="requestJavascript"></pre>
+    <pre class="requestJavascript" tabindex="0"></pre>
     <h4 class="label">curl request</h4>
-    <pre class="requestCurl"></pre>
+    <pre class="requestCurl" tabindex="0"></pre>
     <h4 class="label">response status code</h4>
     <pre class="responseStatusCode" tabindex="0"></pre>
     <h4 class="label">response headers</h4>
-    <pre class="responseHeaders"></pre>
+    <pre class="responseHeaders" tabindex="0"></pre>
     <h4 class="label">response body</h4>
-    <pre class="responseBody"></pre>
+    <pre class="responseBody" tabindex="0"></pre>
     <div class="responseMedia"></div>
 </form>
 </div>
@@ -3015,9 +3069,28 @@ Note: Accessing this endpoint does not count against your rate limit.</span>
 </div>
 <!-- </div> -->
 </div>
-<script></script>
-<script></script>
-<script></script>
+<script>
+/*jslint
+    bitwise: true,
+    browser: true,
+    maxerr: 4,
+    maxlen: 100,
+    node: true,
+    nomen: true,
+    regexp: true,
+    stupid: true
+*/
+"use strict";
+document.querySelector(".swggUiContainer > .thead > .td2").value =
+    ((/\bmodeSwaggerJsonUrl=([^&]+)/g).exec(location.search) || {})[1] ||
+        "assets.swgg.swagger.json";
+</script>
+<script src="assets.utility2.rollup.js"></script>
+<script>
+/*jslint browser: true*/
+window.local = window.local || window.swgg;
+window.swgg.uiEventListenerDict[".onEventUiReload"]({ swggInit: true });
+</script>
 
 
 </body></html>
