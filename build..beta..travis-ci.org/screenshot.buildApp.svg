@@ -1,0 +1,113 @@
+<svg height="974" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="974" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-03-29T16:40:42.534Z - npm-testing /home/travis/build/kaizhu256/node\</tspan>
+<tspan x="10" y="58">-swgg-github-misc</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90"></tspan>
+
+<tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-swgg-github-misc/tmp/b\</tspan>
+<tspan x="10" y="122">uild/test-report.json</tspan>
+
+<tspan x="10" y="138">override assets assets.swgg.swagger.json</tspan>
+
+<tspan x="10" y="154">&gt; server listening on http-port 57088</tspan>
+
+<tspan x="10" y="170">events.js:160</tspan>
+
+<tspan x="10" y="186">      throw er; // Unhandled 'error' event</tspan>
+
+<tspan x="10" y="202">      ^</tspan>
+
+<tspan x="10" y="218"></tspan>
+
+<tspan x="10" y="234">Error: listen EADDRINUSE :::57088</tspan>
+
+<tspan x="10" y="250">    at Object.exports._errnoException (util.js:1020:11)</tspan>
+
+<tspan x="10" y="266">    at exports._exceptionWithHostPort (util.js:1043:20)</tspan>
+
+<tspan x="10" y="282">    at Server._listen2 (net.js:1277:14)</tspan>
+
+<tspan x="10" y="298">    at listen (net.js:1313:10)</tspan>
+
+<tspan x="10" y="314">    at Server.listen (net.js:1409:5)</tspan>
+
+<tspan x="10" y="330">    at Object.local.testRunServer (/home/travis/build/kaizhu256/node-swgg-github-misc/assets.uti\</tspan>
+<tspan x="10" y="346">lity2.rollup.js:22000:47)</tspan>
+
+<tspan x="10" y="362">    at Timeout._onTimeout (/home/travis/build/kaizhu256/node-swgg-github-misc/assets.utility2.ro\</tspan>
+<tspan x="10" y="378">llup.js:21943:27)</tspan>
+
+<tspan x="10" y="394">    at ontimeout (timers.js:386:11)</tspan>
+
+<tspan x="10" y="410">    at tryOnTimeout (timers.js:250:5)</tspan>
+
+<tspan x="10" y="426">    at Timer.listOnTimeout (timers.js:214:5)</tspan>
+
+<tspan x="10" y="442"></tspan>
+
+<tspan x="10" y="458">buildApp - merged test-report from file /home/travis/build/kaizhu256/node-swgg-github-misc/tmp/b\</tspan>
+<tspan x="10" y="474">uild/test-report.json</tspan>
+
+<tspan x="10" y="490"></tspan>
+
+<tspan x="10" y="506">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="522">| test-report - buildApidoc - node - linux v6.14.0 - 2018-03-29T16:39:47.672Z</tspan>
+
+<tspan x="10" y="538">|     209 ms            0 failed        1 passed      |</tspan>
+
+<tspan x="10" y="554">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="570">| test-report - npmTest - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_64) AppleW\</tspan>
+<tspan x="10" y="586">ebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2018-03-29\</tspan>
+<tspan x="10" y="602">T16:39:29.794Z</tspan>
+
+<tspan x="10" y="618">|      17 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="634">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="650">| test-report - npmTest - node - linux v6.14.0 - 2018-03-29T16:39:27.459Z</tspan>
+
+<tspan x="10" y="666">|   16779 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="682">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="698">| test-report - npmTestPublished - browser - /index.default.html - Mozilla/5.0 (X11; Linux x86_6\</tspan>
+<tspan x="10" y="714">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Electron/1.7.13 Safari/537.36 - 2\</tspan>
+<tspan x="10" y="730">018-03-29T16:38:22.320Z</tspan>
+
+<tspan x="10" y="746">|      12 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="762">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="778">| test-report - npmTestPublished - node - linux v6.14.0 - 2018-03-29T16:38:19.130Z</tspan>
+
+<tspan x="10" y="794">|   17745 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="810">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="826"></tspan>
+
+<tspan x="10" y="842">created test-report file /home/travis/build/kaizhu256/node-swgg-github-misc/tmp/build/test-repor\</tspan>
+<tspan x="10" y="858">t.html</tspan>
+
+<tspan x="10" y="874"></tspan>
+
+<tspan x="10" y="890"></tspan>
+
+<tspan x="10" y="906">buildApp - 0 failed tests</tspan>
+
+<tspan x="10" y="922"></tspan>
+
+<tspan x="10" y="938"></tspan>
+
+<tspan x="10" y="954">[MODE_BUILD=buildApp] - 2018-03-29T16:40:43.497Z - EXIT_CODE - 1</tspan>
+
+</text>
+</svg>
