@@ -16601,12 +16601,12 @@ PORT=8081 node ./assets.app.js\n\
         "url": "https://github.com/kaizhu256/node-jslint-lite.git"\n\
     },\n\
     "scripts": {\n\
-        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_script",\n\
-        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_script",\n\
+        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_event",\n\
+        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_event",\n\
         "build-ci": "utility2 shReadmeTest build_ci.sh",\n\
         "env": "env",\n\
         "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha --prefix . && utility2 shDeployHeroku",\n\
-        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_script",\n\
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_event",\n\
         "start": "PORT=${PORT:-8080} utility2 start test.js",\n\
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"\n\
     },\n\
@@ -18221,7 +18221,7 @@ local.assetsDict['/favicon.ico'] = '';
                         statusCode: options.xhr.statusCode,
                         timeElapsed: options.xhr.timeElapsed,
                         // extra
-                        responseContentLength: options.xhr.response.length,
+                        responseContentLength: options.xhr.response && options.xhr.response.length,
                         depth: options.depth,
                         ii: options.ii,
                         listLength: options.list.length,
