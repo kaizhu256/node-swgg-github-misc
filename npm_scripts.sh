@@ -4,9 +4,9 @@
 # run command
 case "$1" in
 apidocRawCreate)
-    utility2 shNpmRunApidocRawCreate
+    utility2 shNpmRunApidocRawFetchAndCreate "$npm_lifecycle_event"
     ;;
 apidocRawFetch)
-    utility2 shNpmRunApidocRawFetch
+    utility2 shNpmRunApidocRawFetchAndCreate "$npm_lifecycle_event"
     ;;
 esac
