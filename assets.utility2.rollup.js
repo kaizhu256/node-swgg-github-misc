@@ -16601,12 +16601,12 @@ PORT=8081 node ./assets.app.js\n\
         "url": "https://github.com/kaizhu256/node-jslint-lite.git"\n\
     },\n\
     "scripts": {\n\
-        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawCreate",\n\
-        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptApidocRawFetch",\n\
+        "apidocRawCreate": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_script",\n\
+        "apidocRawFetch": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_script",\n\
         "build-ci": "utility2 shReadmeTest build_ci.sh",\n\
         "env": "env",\n\
         "heroku-postbuild": "npm install kaizhu256/node-utility2#alpha --prefix . && utility2 shDeployHeroku",\n\
-        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh shNpmScriptPostinstall",\n\
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh $npm_lifecycle_script",\n\
         "start": "PORT=${PORT:-8080} utility2 start test.js",\n\
         "test": "PORT=$(utility2 shServerPortRandom) utility2 test test.js"\n\
     },\n\
@@ -18231,7 +18231,7 @@ local.assetsDict['/favicon.ico'] = '';
                     // save file
                     local.fsWriteFileWithMkdirpSync(
                         options.file,
-                        options.postProcess(options.xhr.responseText).trim() + '\n'
+                        options.postProcess(options.xhr.responseText.trim() + '\n')
                     );
                     // skip crawl
                     if (!(options.depth < options.depthMax)) {
